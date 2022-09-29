@@ -10,28 +10,36 @@
 </head>
 <body>
     <header>
-        <div class = 'header-item'>
-            <img id = 'logo' src = 'imagens/logo-sakura.png' alt = 'Logo Sakura'>
+        <div id = 'conteudo-header'>
+            <div class = 'header-item' id = 'logo'>
+                <img id = 'logo-imagem' src = 'imagens/logo-sakura.png' alt = 'Logo Sakura'> 
+            </div>
+            <div class = 'header-item' id = 'pesquisa-inline'>
+                <form>
+                    <input type="search" name="busca" id="ibusca">
+                </form>
+            </div>
+            <div class = 'header-item' id = 'menu-mobile'>
+                    <ul>
+                        <li> <img class = 'item-mobile' src = 'imagens/a.png' alt = 'Lupa'> </li>
+                        <li> <img class = 'item-mobile' src = 'imagens/carrinho.png' alt = 'Carrinho de compras '> </li>
+                        <li> <img class = 'item-mobile' src = 'imagens/barrinhas.png' alt = 'Três barrinhas'> </li>
+                    </ul>
+
+            </div>
+            <div class = 'header-item' id = 'header-item-inline'>
+                <a href = 'login.html' target = '_self'>
+                    <img id = 'conta' class = 'header-nav-item' src = 'imagens/conta1.png' alt = 'Ícone de conta'>
+                </a>
+                <a class = 'header-nav-item' href = 'pedidos.html' target = '_self'>
+                        Meus pedidos
+                </a>
+                <a class = 'header-nav-item' href = 'carrinho.html' target = '_self'>
+                        Carrinho
+                </a>
+            </div>
         </div>
-        <div class = 'header-item'>
-            <form>
-                <input type="search" name="busca" id="ibusca">
-            </form>
-        </div>
-        <div class = 'header-item' id = 'hamburguer'> 
-            <img id = 'barrinha' src = 'imagens/barrinhas.png' alt = 'Três barrinhas'>
-        </div>
-        <div class = 'header-item' id = 'header-item-inline'>
-            <a href = 'login.html' target = '_self'>
-                <img id = 'conta' class = 'header-nav-item' src = 'imagens/conta1.png' alt = 'Ícone de conta'>
-            </a>
-            <a class = 'header-nav-item' href = 'pedidos.html' target = '_self'>
-                 Meus pedidos
-            </a>
-            <a class = 'header-nav-item' href = 'carrinho.html' target = '_self'>
-                 Carrinho
-            </a>
-        </div>
+        
     </header>
     <ul id = 'menu-hamburguer'>
         <li class = 'menu-hamburguer-item'> Minha Conta </li>
