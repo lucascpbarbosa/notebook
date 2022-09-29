@@ -10,19 +10,18 @@
 </head>
 <body>
     <header>
-        <a href = 'index.html' target = '_self'>
-            <div id = 'logo'>
-                <img src = 'imagens/logo.png' rel = 'Sakura World'>
-            </div>
-        </a>
-        <div id = 'pesquisar'>
-            <form action = 'pesquisa.py' autocomplete = 'off'>
-                <label for = 'bbusca'>
-                </label>
-                <input type = 'search' name = 'busca' id = 'bbusca' placeholder = 'Busque por títulos ;)'>
+        <div class = 'header-item'>
+            <img id = 'logo' src = 'imagens/logo-sakura.png' alt = 'Logo Sakura'>
+        </div>
+        <div class = 'header-item'>
+            <form>
+                <input type="search" name="busca" id="ibusca">
             </form>
         </div>
-        <div id = 'nav'>
+        <div class = 'header-item' id = 'hamburguer'> 
+            <img id = 'barrinha' src = 'imagens/barrinhas.png' alt = 'Três barrinhas'>
+        </div>
+        <div class = 'header-item' id = 'header-item-inline'>
             <a href = 'login.html' target = '_self'>
                 <img id = 'conta' class = 'header-nav-item' src = 'imagens/conta1.png' alt = 'Ícone de conta'>
             </a>
@@ -34,10 +33,16 @@
             </a>
         </div>
     </header>
+    <ul id = 'menu-hamburguer'>
+        <li class = 'menu-hamburguer-item'> Minha Conta </li>
+        <li class = 'menu-hamburguer-item'> Meus Pedidos </li>
+        <li class = 'menu-hamburguer-item'> Carrinho </li>
+        <li class = 'menu-hamburguer-item'> Mangás </li>
+        <li class = 'menu-hamburguer-item'> Quadrinhos </li>
+        <li class = 'menu-hamburguer-item'> Livros </li>
+        <li class = 'menu-hamburguer-item'> Action Figures </li>
+    </ul>
     <nav id = 'menu-categorias'> 
-        <!--<a href = 'categorias.html' target = '_self'> 
-            <img id = 'barrinhas' src = 'imagens/barrinhas.png' alt = 'Três barrinhas'>
-        </a>-->
         <a class = 'categorias' href = 'mangas.html' target = '_self'> 
             Mangás 
         </a>
