@@ -14,14 +14,14 @@
 
 
 #destaque{
+    width: 100%;
     text-align: center;
-    margin-top: 20px;
-    
+    margin-top: 10px;
 }
 
 #centro{
-    width: 90vw;
-    height: 500px;
+    width: 90%;
+    height: 300px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
     border: 1px solid transparent;
     border-radius: 10px;
@@ -36,10 +36,6 @@ main h1 {
     text-align: center;
 }
 
- main h1::after{
-    content: '🌸';
-
-}
 
 .vitrine{
     display: block;

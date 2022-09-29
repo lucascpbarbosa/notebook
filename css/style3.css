@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+/* Configuração para tablets e ipads */
+
+
+header > div{
+    gap: 0px;
+    justify-content: space-between;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+
+#pesquisar{
+    width: 220px;
+}
+#ipesquisa{
+    width: 100%;
+}
+
+.item-header{
+    width: 250px;
+}
+
+#menu{
+    width: 100%;
+    display: inline;
+    font-size: 1em;
+    color: var(--cor4);
+
+}
+
+#menu > a {
+    margin-right: 3px;
+    color: var(--cor4);
+}
+
+
+#conta{
+    width: 15px;
+}

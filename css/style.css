@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&display=swap');
 
-
+/* Configuração para celulares */
 
 :root{
     --cor0: #F77293;
@@ -12,7 +12,8 @@
     --fonte: 'Fira Sans';
 }
 
-#pesquisa-inline, #header-item-inline, #menu-categorias, #menu-hamburguer{
+
+#ipesquisa, #menu{
     display: none;
 }
 
@@ -20,157 +21,105 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Fira Sans';
 }
 
-
-
-
-header{
-    height: 80px;
+header {
     background-color: var(--cor1);
 }
 
-#conteudo-header{
-    width: 100%;
+
+header > div {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    gap: 10px;
+    height: 100px;
 }
 
-.header-item{
-    flex: 1 1 0px;
-    width: 0;
-}
-
-.item-mobile{
-    width: 20px;
-    height: 20px;
-}
-
-
-.header-item > ul > li{
-    position: relative;
-    bottom: 20px;
-    left: 135px;
-    display: inline-block;
-    border: 2px solid var(--cor4);
-    border-radius: 10px;
-    padding: 3px;
-    margin: 3px;
-    background-color: var(--cor2);
-}
-
-
-@media (min-width: 650px){
-body {
-    background-color: white;
-    width: 99vw;
-    height: 99vh;
-
-}
-
-header{
-    position: relative;
-    background-color: var(--cor1);
-    height: 180px;
-}
-
-
-#logo{
-    position: absolute;
-    left: 10%;
-    top: 10%;
-}
-
-#pesquisar{
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, 50%);
-}
-
-#lupa{
-    position: absolute;
-    top: 15%;
-    left: 2%;
-    width: 35px;
-    height: 25px;
-}
-
-#bbusca {
-    width: 600px;
-    height: 35px;
-    background-color: var(--cor3);
-    border: 2px solid var(--cor4);
-    border-radius: 10px;
-    outline: none;
-}
-
-
-#bbusca::placeholder{
-    font: normal 1.2em var(--fonte);
-    color: var(--cor1);
+.item-header{
+    width: 200px;
     text-align: center;
 }
 
-#nav{
-    position: absolute;
-    left: 75%;
-    top: 50%;
-    margin: 0px;
+#logo{
+    width: 250px;
+
 }
 
-
-.header-nav-item{
-    display: inline;
-    margin-right: 50px;
-    font: bold 1.5em var(--fonte);
-    color: var(--cor4);
+.divs-pesquisa{
+    position: relative;
+    top: 10px;
 }
 
-#conta{
-    width: 40px;
-    height: 45px; 
+#pesquisar{
+    width: 330px;
 }
 
-.header-nav-item:hover, .categorias:hover {
-    transform: translateY(-10%);
-    transition: 0.5s;
+#pesquisamobile{
+    display: none;
+    background-color: var(--cor2);
+    padding: 10px;
 }
 
-#menu-categorias{
-    display: flex;
-    column-gap: 50px;
-    justify-content: center;
+#pesquisarmobile{
+    display: none;
+    margin: auto;
+    width: 50%;
     background-color: var(--cor3);
-    padding: 10px 0px 10px 0px;
+    border: 1px solid var(--cor4);
+    border-radius: 10px;
+    color: white;
+    
 }
 
-.categorias{
-    font: 400 1.2em var(--fonte);
+.menu-mobile{
+    width: 20px;
+}
+
+#hamburguer{
+    display: none;
+    width: 100%;
+    background-color: var(--cor2);
+    padding: 10px 0px;
+    text-align: center;
+    list-style-type: none;
+}
+
+#hamburguer > li {
+    margin-bottom: 10px;
+}
+
+#hamburguer > li > a {
+    font: bold 1.3em var(--fonte);
     color: white;
 }
 
 footer{
     background-color: var(--cor4);
-    text-align: left;
 }
 
-.lista-rodape{
-    display: inline-block;
-    list-style: none;
-    margin: 35px;
+#informacoes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+}
+
+#informacoes > ul {
+    list-style-type: none;
 }
 
 .topico{
-    font: bold 1.5em var(--fonte);
-    color: var(--cor3);
+    font: normal 1.2em var(--fonte);
+    color: white;
+    margin: 10px 0px;
 }
+
+
 
 .subtopicos{
-    margin: 10px 10px 10px 0px;
-    font: 400 1.2em var(--fonte);
-    color: white; 
-}
-
+    font: normal em var(--fonte);
+    color: var(--cor1);
+    text-decoration: none;
 }
