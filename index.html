@@ -5,25 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = 'stylesheet' href = 'css/style.css'>
-    <link rel = 'stylesheet' href = 'css/style3.css' media = 'screen and (min-width: 500px) and (max-width: 800px)'>
+    <link rel = 'stylesheet' href = 'css/style3.css' media = 'screen and (min-width: 550px) and (max-width: 800px)'>
     <link rel = 'stylesheet' href = 'css/home.css'>
     <title> Loja </title>
 </head>
 <body>
     <header>
         <div>
-            <div class = 'item-header' id = 'aaa'> 
+            <div id = 'div-logo'> 
                 <a href = 'index.html'> 
                     <img id = 'logo' src = 'imagens/logo-sakura.png' alt = 'Logo Sakura World'> 
                 </a>
             </div>
-            <div class = 'item-header divs-pesquisa' id = 'pesquisar'> 
+            <div class = 'divs-menus' id = 'pesquisar'> 
                 <form>
                     <input type = 'search' name = 'pesquisa' id = 'ipesquisa'>
                 </form>
             </div>
-            <div class = 'item-header divs-pesquisa'>
-                <label for="pesquisa-mobile">
+            <div class = 'divs-menus'>
+                <label for="ipesquisa">
                     <img class = 'menu-mobile' onclick = 'abrirPesquisa(), abrirDivPesquisa()' src="imagens/a.png" alt="Lupa de pesquisa">
                 </label>
                 <img class = 'menu-mobile' onclick = 'abrirMenu()' src = 'imagens/novos-tamanhos/barrinhas.png' alt = 'Três barrinhas'>
@@ -31,24 +31,26 @@
                     <a href = 'login.html'>
                         <img id = 'conta' src = 'imagens/novos-tamanhos/conta1.png'>
                     </a>
-                    <a href = 'pedidos.html'>
-                        Meus pedidos
-                    </a>
                     <a href = 'carrinho.html'>
-                        Carrinho
+                        <img id = 'carrinho' src = 'imagens/novos-tamanhos/carrinho.png'>
                     </a>
                 </div>
             </div>
         </div>
     </header>
-    <div id = 'pesquisamobile'>
-        <form>
-            <input type = 'search' name = 'pesquisa' id = 'pesquisarmobile'>
-        </form>
-    </div>
+    <nav>
+        <ul id = 'navegacao'>
+            <li> <a href = 'pedidos.html'> Meus Pedidos </a> </li>
+            <li> <a href = 'mangas.html'> Mangás </a> </li>
+            <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
+            <li> <a href = 'livros.html'> Livros </a></li>
+            <li> <a href = 'figures.html'> Action Figures </a></li>
+        </ul>
+    </nav>
     <ul id = 'hamburguer'>
         <li> <a href = 'login.html'> Minha Conta </a> </li>
         <li> <a href = 'pedidos.html'> Meus Pedidos </a> </li>
+        <li> <a href = 'carrinho.html'> Seu Carrinho</a></li>
         <li> <a href = 'mangas.html'> Mangás </a> </li>
         <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
         <li> <a href = 'livros.html'> Livros </a></li>
@@ -94,31 +96,14 @@
     <script>
         function abrirMenu(){
             if (hamburguer.style.display == 'block'){
-                hamburguer.style.display = 'none'
+                hamburguer.style.display = 'none';
             }
             else {
-                hamburguer.style.display = 'block'
+                hamburguer.style.display = 'block';
+
             }
         }
 
-        function abrirPesquisa(){
-            if (pesquisarmobile.style.display == 'block'){
-                pesquisarmobile.style.display = 'none'
-            }
-            else{
-                pesquisarmobile.style.display = 'block'
-            }
-        }
-
-        function abrirDivPesquisa(){
-            if (pesquisamobile.style.display == 'block'){
-                pesquisamobile.style.display = 'none'
-            }
-            else{
-                pesquisamobile.style.display = 'block'
-            }
-
-        }
     </script>
 </body>
 </html>

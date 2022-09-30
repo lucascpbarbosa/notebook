@@ -3,41 +3,46 @@
 /* Configuração para tablets e ipads */
 
 
-header > div{
-    gap: 0px;
-    justify-content: space-between;
-}
-
 .menu-mobile{
     display: none;
 }
 
+#menu{
+    width: 100px;
+    display: inline;
+    font-size: 20px;
+    color: var(--cor4);
+
+}
+
+
 
 #pesquisar{
-    width: 220px;
-}
-#ipesquisa{
-    width: 100%;
-}
-
-.item-header{
-    width: 250px;
-}
-
-#menu{
-    width: 100%;
-    display: inline;
-    font-size: 1em;
-    color: var(--cor4);
-
-}
-
-#menu > a {
-    margin-right: 3px;
-    color: var(--cor4);
+    width: 120px;
 }
 
 
 #conta{
-    width: 15px;
+    width: 20%;
+    margin-right: 10px;
 }
+
+#carrinho{
+    width: 15%;
+}
+
+#navegacao{
+    background-color: var(--cor4);
+    text-align: center;
+    padding: 15px 0px;
+}
+
+#navegacao > li{
+    display: inline;
+    margin: 15px;
+}
+
+#navegacao > li > a{
+    color: white;
+}
+
