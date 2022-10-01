@@ -5,57 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = 'stylesheet' href = 'css/style.css'>
-    <link rel = 'stylesheet' href = 'css/style3.css' media = 'screen and (min-width: 550px) and (max-width: 800px)'>
+    <link rel = 'stylesheet' href = 'css/style3.css' media = 'screen and (min-width: 1000px) and (max-width: 800px)'>
     <link rel = 'stylesheet' href = 'css/home.css'>
     <title> Loja </title>
 </head>
 <body>
     <header>
-        <div>
-            <div id = 'div-logo'> 
-                <a href = 'index.html'> 
-                    <img id = 'logo' src = 'imagens/logo-sakura.png' alt = 'Logo Sakura World'> 
-                </a>
-            </div>
-            <div class = 'divs-menus' id = 'pesquisar'> 
-                <form>
-                    <input type = 'search' name = 'pesquisa' id = 'ipesquisa'>
-                </form>
-            </div>
-            <div class = 'divs-menus'>
-                <label for="ipesquisa">
-                    <img class = 'menu-mobile' onclick = 'abrirPesquisa(), abrirDivPesquisa()' src="imagens/a.png" alt="Lupa de pesquisa">
-                </label>
-                <img class = 'menu-mobile' onclick = 'abrirMenu()' src = 'imagens/novos-tamanhos/barrinhas.png' alt = 'Três barrinhas'>
-                <div id = 'menu'>
-                    <a href = 'login.html'>
-                        <img id = 'conta' src = 'imagens/novos-tamanhos/conta1.png'>
-                    </a>
-                    <a href = 'carrinho.html'>
-                        <img id = 'carrinho' src = 'imagens/novos-tamanhos/carrinho.png'>
-                    </a>
+        <div id = 'container'>
+            <div id = 'menu'>
+                <div id = 'div-logo'> 
+                    <a href = 'index.html'> <img id = 'logo' src = 'imagens/logo.png'> </a>
+                </div>
+                <div id = 'div-pesquisa'>
+                    <form>
+                        <input type = 'search' name = 'pesquisa' id = 'ipesquisa'>
+                    </form>
+                </div>
+                <div id = 'div-atalhos'>
+                    <div class = 'div-imagens'>
+                        <a href = 'carrinho.html'>
+                            <img class = 'imagem-atalho' src = 'imagens/novos-tamanhos/carrinho.png'>
+                        </a>
+                    </div>
+                    <div class = 'div-imagens'>
+                        <img class = 'imagem-atalho' id = 'barrinha' onclick = 'abrirMenu()' src = 'imagens/novos-tamanhos/barrinhas.png'>
+                    </div>
+                    </div>
+                    <div id = 'atalho-fullscreen'>
+                        <a href = 'login.html'> <img src = 'imagens/novos-tamanhos/conta1.png'> Minha Conta </a>
+                        <a href = 'pedidos.html'> Meus Pedidos </a>
+                    </div>
                 </div>
             </div>
+            <nav id = 'hamburguer'>
+                <ul>
+                    <li> <a href = 'login.html'> Minha Conta </a> </li>
+                    <li> <a href = 'pedidos.html'> Meus Pedidos </a> </li>
+                    <li> <a href = 'carrinho.html'> Seu Carrinho</a></li>
+                    <li> <a href = 'mangas.html'> Mangás </a> </li>
+                    <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
+                    <li> <a href = 'livros.html'> Livros </a></li>
+                    <li> <a href = 'figures.html'> Action Figures </a></li>
+                </ul>
+            </nav>
+            <nav id = 'navegacao'>
+                <ul>
+                    <li> <a href = 'pedidos.html'> Meus Pedidos </a> </li>
+                    <li> <a href = 'mangas.html'> Mangás </a> </li>
+                    <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
+                    <li> <a href = 'livros.html'> Livros </a></li>
+                    <li> <a href = 'figures.html'> Action Figures </a></li>
+                </ul>
+            </nav>         
         </div>
-    </header>
-    <nav>
-        <ul id = 'navegacao'>
-            <li> <a href = 'pedidos.html'> Meus Pedidos </a> </li>
-            <li> <a href = 'mangas.html'> Mangás </a> </li>
-            <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
-            <li> <a href = 'livros.html'> Livros </a></li>
-            <li> <a href = 'figures.html'> Action Figures </a></li>
-        </ul>
-    </nav>
-    <ul id = 'hamburguer'>
-        <li> <a href = 'login.html'> Minha Conta </a> </li>
-        <li> <a href = 'pedidos.html'> Meus Pedidos </a> </li>
-        <li> <a href = 'carrinho.html'> Seu Carrinho</a></li>
-        <li> <a href = 'mangas.html'> Mangás </a> </li>
-        <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
-        <li> <a href = 'livros.html'> Livros </a></li>
-        <li> <a href = 'figures.html'> Action Figures </a></li>
-    </ul>
+    </header>   
     <main>
         <div id = 'destaque'>
             <img id = 'centro' src = 'imagens/central.jpg'>
@@ -72,26 +75,29 @@
         </div>
     </main>
     <footer>
-        <div id = 'informacoes'>
+        <div class = 'informacoes'>
             <ul class = 'lista-rodape'>
                 <li class = 'topico'> Sobre  </li>
                 <li> <a class = 'subtopicos' href="historia.html"> A Sakura World </a></li>
                 <li> <a class = 'subtopicos' href="sobre-produtos.html"> Nossos Produtos </a> </li>
                 <li>  <a class = 'subtopicos' href="garantia.html"> Garantia </a> </li>
             </ul>
+        </div>
+        <div class = 'informacoes'>
             <ul class = 'lista-rodape'>
                 <li class = 'topico'> Ajuda </li>
                 <li> <a class = 'subtopicos' href="perguntas.html"> Perguntas Frequentes </a> </li>
                 <li> <a class = 'subtopicos' href="formas-pagamento.html"> Formas de Pagamento </a> </li>
                 <li> <a class = 'subtopicos' href="formas-envio.html"> Formas de Envio </a> </li>
             </ul>
-            <ul class = 'lista-rodape'>
-                <li class = 'topico'>  Contato </li>
-                <li> <a class = 'subtopicos' href="email.html"> E-mail </a> </li>
-                <li> <a class = 'subtopicos' href="telefone.html"> Telefone </a> </li>
-                <li> <a class = 'subtopicos' href="redes.html"> Redes Sociais </a> </li>
-            <a href=""></ul></a>
         </div>
+            <div class = 'informacoes'>
+                <ul class = 'lista-rodape'>
+                    <li class = 'topico'>  Contato </li>
+                    <li class = 'subtopicos'> <a href="email.html"> E-mail </a> </li>
+                    <li class = 'subtopicos'> <a href="telefone.html"> Telefone </a> </li>
+                    <li class = 'subtopicos'> <a href="redes.html"> Redes Sociais </a> </li>
+            </div>
     </footer>
     <script>
         function abrirMenu(){
