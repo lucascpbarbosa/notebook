@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = 'stylesheet' href = 'css/style.css'>
-    <link rel = 'stylesheet' href = 'css/style3.css' media = 'screen and (min-width: 1000px) and (max-width: 800px)'>
+    <link rel = 'stylesheet' href = 'css/style3.css' media = 'screen and (min-width: 500px) and (max-width: 9999px)'>
+    
     <link rel = 'stylesheet' href = 'css/home.css'>
     <title> Loja </title>
 </head>
@@ -24,17 +25,18 @@
                 <div id = 'div-atalhos'>
                     <div class = 'div-imagens'>
                         <a href = 'carrinho.html'>
-                            <img class = 'imagem-atalho' src = 'imagens/novos-tamanhos/carrinho.png'>
+                            <img class = 'imagem-atalho' src = 'imagens/carro.png'>
                         </a>
                     </div>
                     <div class = 'div-imagens'>
                         <img class = 'imagem-atalho' id = 'barrinha' onclick = 'abrirMenu()' src = 'imagens/novos-tamanhos/barrinhas.png'>
                     </div>
-                    </div>
-                    <div id = 'atalho-fullscreen'>
-                        <a href = 'login.html'> <img src = 'imagens/novos-tamanhos/conta1.png'> Minha Conta </a>
-                        <a href = 'pedidos.html'> Meus Pedidos </a>
-                    </div>
+                </div>
+
+                <div id = 'atalho-fullscreen'>
+                    <a href = 'login.html'> <img class = 'imagens-fullscreen' src = 'imagens/novos-tamanhos/conta1.png'> </a>
+                    <a href = 'pedidos.html'> <img class = 'imagens-fullscreen' src = 'imagens/novos-tamanhos/carrinho.png'> </a>
+                    <a href = 'carrinho.html'> <img class = 'imagens-fullscreen' src = 'imagens/carro.png'> </a>
                 </div>
             </div>
             <nav id = 'hamburguer'>
@@ -50,9 +52,9 @@
             </nav>
             <nav id = 'navegacao'>
                 <ul>
-                    <li> <a href = 'pedidos.html'> Meus Pedidos </a> </li>
                     <li> <a href = 'mangas.html'> Mangás </a> </li>
                     <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
+                    <li <a href = 'novels.html'> Light Novels </a>
                     <li> <a href = 'livros.html'> Livros </a></li>
                     <li> <a href = 'figures.html'> Action Figures </a></li>
                 </ul>
@@ -76,28 +78,29 @@
     </main>
     <footer>
         <div class = 'informacoes'>
-            <ul class = 'lista-rodape'>
+            <ul>
                 <li class = 'topico'> Sobre  </li>
-                <li> <a class = 'subtopicos' href="historia.html"> A Sakura World </a></li>
-                <li> <a class = 'subtopicos' href="sobre-produtos.html"> Nossos Produtos </a> </li>
-                <li>  <a class = 'subtopicos' href="garantia.html"> Garantia </a> </li>
+                <li class = 'subtopicos'> <a  href="historia.html"> A Sakura World </a></li>
+                <li class = 'subtopicos'> <a  href="sobre-produtos.html"> Nossos Produtos </a> </li>
+                <li class = 'subtopicos'>  <a  href="garantia.html"> Garantia </a> </li>
             </ul>
         </div>
         <div class = 'informacoes'>
-            <ul class = 'lista-rodape'>
+            <ul>
                 <li class = 'topico'> Ajuda </li>
-                <li> <a class = 'subtopicos' href="perguntas.html"> Perguntas Frequentes </a> </li>
-                <li> <a class = 'subtopicos' href="formas-pagamento.html"> Formas de Pagamento </a> </li>
-                <li> <a class = 'subtopicos' href="formas-envio.html"> Formas de Envio </a> </li>
+                <li class = 'subtopicos'> <a  href="perguntas.html"> Perguntas Frequentes </a> </li>
+                <li class = 'subtopicos'> <a  href="formas-pagamento.html"> Formas de Pagamento </a> </li>
+                <li class = 'subtopicos'> <a  href="formas-envio.html"> Formas de Envio </a> </li>
             </ul>
         </div>
-            <div class = 'informacoes'>
-                <ul class = 'lista-rodape'>
-                    <li class = 'topico'>  Contato </li>
-                    <li class = 'subtopicos'> <a href="email.html"> E-mail </a> </li>
-                    <li class = 'subtopicos'> <a href="telefone.html"> Telefone </a> </li>
-                    <li class = 'subtopicos'> <a href="redes.html"> Redes Sociais </a> </li>
-            </div>
+        <div class = 'informacoes'>
+            <ul>
+                <li class = 'topico' id = 'contato'> Contato </li>
+                <li class = 'redes'> <a href = 'http://www.instagram.com' target = '_blank'><img class = 'redes-sociais' src = 'imagens/instagram.png'></a> </li>
+                <li class = 'redes'> <a href = 'http://www.twitter.com' target = '_blank'> <img class = 'redes-sociais' src = 'imagens/twitter.png'></a> </li>
+                <li class = 'redes'> <a href = 'http://www.facebook.com' target = '_blank'> <img class = 'redes-sociais' src = 'imagens/facebook.png'> </a> </li>   
+            </ul>
+        </div>
     </footer>
     <script>
         function abrirMenu(){

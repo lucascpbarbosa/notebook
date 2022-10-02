@@ -12,8 +12,9 @@
     --fonte: 'Fira Sans';
 }
 
-#atalho-fullscreen, #hamburguer, #navegacao{
+#div-conta, #atalho-fullscreen, #hamburguer, #navegacao{
     display: none;
+
 }
 
 *{
@@ -22,6 +23,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: var(--fonte);
+    color: #ffffffaf ;
 }
 html{
     height: 100vh;
@@ -36,12 +38,13 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px; 
+    gap: 30px; 
     width: 100%;
 }
 
 #div-logo{
     width: 200px;
+    margin-left: 10px;
 }
 
 #logo{
@@ -49,12 +52,12 @@ header{
 }
 
 #div-pesquisa{
+    position: relative;
+    top: 25px;
     width: 150px;
 }
 
 #ipesquisa{
-    position: relative;
-    top: 25px;
     width: 100%;
     border: 2.6px solid var(--cor4);
     border-radius: 5px;
@@ -63,9 +66,11 @@ header{
 
 #div-atalhos{
     display: flex;
+    gap: 5px;
     text-align: center;
     align-items: center;
     width: 100px;
+    margin-right: 10px;
 }
 
 .div-imagens{
@@ -75,15 +80,22 @@ header{
 }
 
 .imagem-atalho{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 #hamburguer{
     text-align: center;
+    background-color: var(--cor2);
+    padding: 5px 0px;
 }
 #hamburguer > ul > li{
-    margin: 10px 0px;
+    margin: 15px 0px;
+
+}
+
+#hamburguer > ul > li:hover{
+    transform: translate(0%, -3%);
 }
 #hamburguer > ul > li > a{
     color: white;
@@ -94,11 +106,14 @@ header{
 
 footer{
     background-color: var(--cor4);
+    text-align: center;
 }
 
 .informacoes{
     display: inline-block;
+    vertical-align: top;
     margin: 20px; 
+    height: 90px;
 
 }
 
@@ -113,14 +128,23 @@ footer > div > ul > li{
 .topico{
     font-size: 1.2em;
     color: var(--cor0);
-    margin-bottom: 5px;
 }
 .subtopicos{
-    color: rgba(255, 255, 255, 0.685);
+    color: #ffffffaf;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
-.subtopicos:hover{
-    transform: translate(-10%);
+.redes{
+    display: inline-block;
 }
+
+.redes-sociais{
+    width: 30px;
+    margin: 12px;
+}
+
+.subtopicos:hover, .redes:hover{
+    transform: translate(0%, -3%);
+}
+
