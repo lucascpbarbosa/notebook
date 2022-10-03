@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = 'stylesheet' href = 'css/style.css'>
-    <link rel = 'stylesheet' href = 'css/style3.css' media = 'screen and (min-width: 500px) and (max-width: 9999px)'>
+    <link rel = 'stylesheet' href = 'css/style3.css' media = 'screen and (min-width: 600px) and (max-width: 9999px)'>
     
     <link rel = 'stylesheet' href = 'css/home.css'>
     <title> Loja </title>
 </head>
-<body>
+<body onresize = 'mudou()'>
     <header>
         <div id = 'container'>
             <div id = 'menu'>
@@ -54,7 +54,7 @@
                 <ul>
                     <li> <a href = 'mangas.html'> Mangás </a> </li>
                     <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
-                    <li <a href = 'novels.html'> Light Novels </a>
+                    <li> <a href = 'novels.html'> Light Novels </a> </li>
                     <li> <a href = 'livros.html'> Livros </a></li>
                     <li> <a href = 'figures.html'> Action Figures </a></li>
                 </ul>
@@ -82,7 +82,7 @@
                 <li class = 'topico'> Sobre  </li>
                 <li class = 'subtopicos'> <a  href="historia.html"> A Sakura World </a></li>
                 <li class = 'subtopicos'> <a  href="sobre-produtos.html"> Nossos Produtos </a> </li>
-                <li class = 'subtopicos'>  <a  href="garantia.html"> Garantia </a> </li>
+                <li class = 'subtopicos'> <a  href="garantia.html"> Garantia </a> </li>
             </ul>
         </div>
         <div class = 'informacoes'>
@@ -103,6 +103,14 @@
         </div>
     </footer>
     <script>
+        function mudou(){
+            if (window.innerWidth >= '600'){
+                hamburguer.style.display = 'none';
+            }
+            else{
+                hamburguer.style.display = 'block'
+            }
+        }
         function abrirMenu(){
             if (hamburguer.style.display == 'block'){
                 hamburguer.style.display = 'none';
