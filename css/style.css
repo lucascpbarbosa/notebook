@@ -12,7 +12,7 @@
     --fonte: 'Fira Sans';
 }
 
-#div-conta, #atalho-fullscreen, #hamburguer, #navegacao{
+#div-conta, #atalhos-tablet, #hamburguer, #navegacao{
     display: none;
 
 }
@@ -25,7 +25,8 @@
     font-family: var(--fonte);
     color: #ffffffaf ;
 }
-html{
+
+html, body{
     height: 100vh;
 }
 
@@ -38,13 +39,17 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px; 
+    gap: 30px;
     width: 100%;
 }
 
+.itens-menu{
+    width: 150px;
+    flex-shrink: 1;
+}
+
 #div-logo{
-    width: 200px;
-    margin-left: 10px;
+    
 }
 
 #logo{
@@ -52,9 +57,9 @@ header{
 }
 
 #div-pesquisa{
-    position: relative;
-    top: 25px;
-    width: 150px;
+    align-self: flex-end;
+    margin-bottom: 2.5%;
+ 
 }
 
 #ipesquisa{
@@ -62,27 +67,27 @@ header{
     border: 2.6px solid var(--cor4);
     border-radius: 5px;
     background-color: var(--cor1);
+    cursor: pointer;
 }
 
 #div-atalhos{
     display: flex;
     gap: 5px;
     text-align: center;
-    align-items: center;
-    width: 100px;
-    margin-right: 10px;
+    align-self: flex-end;
+    margin-bottom: 1.5%;
 }
 
 .div-imagens{
-    position: relative;
-    top: 25px;
-    width: 50%;
+    width: 100%;
 }
 
 .imagem-atalho{
     width: 30px;
     height: 30px;
 }
+
+
 
 #hamburguer{
     text-align: center;

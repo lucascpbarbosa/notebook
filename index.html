@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = 'stylesheet' href = 'css/style.css'>
-    <link rel = 'stylesheet' href = 'css/style3.css' media = 'screen and (min-width: 600px) and (max-width: 9999px)'>
+    <link rel = 'stylesheet' href = 'css/style.css' media = 'all'>
+    <link rel = 'stylesheet' href = 'css/media-query.css'>
     
     <link rel = 'stylesheet' href = 'css/home.css'>
     <title> Loja </title>
 </head>
 <body onresize = 'mudou()'>
     <header>
-        <div id = 'container'>
-            <div id = 'menu'>
-                <div id = 'div-logo'> 
+            <div  id = 'menu'>
+                <div class = 'itens-menu' id = 'div-logo'> 
                     <a href = 'index.html'> <img id = 'logo' src = 'imagens/logo.png'> </a>
                 </div>
-                <div id = 'div-pesquisa'>
+                <div class = 'itens-menu' id = 'div-pesquisa'>
                     <form>
                         <input type = 'search' name = 'pesquisa' id = 'ipesquisa'>
                     </form>
                 </div>
-                <div id = 'div-atalhos'>
+                <div class = 'itens-menu' id = 'div-atalhos'>
                     <div class = 'div-imagens'>
                         <a href = 'carrinho.html'>
                             <img class = 'imagem-atalho' src = 'imagens/carro.png'>
@@ -33,11 +32,37 @@
                     </div>
                 </div>
 
-                <div id = 'atalho-fullscreen'>
-                    <a href = 'login.html'> <img class = 'imagens-fullscreen' src = 'imagens/novos-tamanhos/conta1.png'> </a>
-                    <a href = 'pedidos.html'> <img class = 'imagens-fullscreen' src = 'imagens/novos-tamanhos/carrinho.png'> </a>
-                    <a href = 'carrinho.html'> <img class = 'imagens-fullscreen' src = 'imagens/carro.png'> </a>
+                <div class = 'itens-menu' id = 'atalhos-tablet'>
+                    <a href = 'login.html'> <img class = 'imagens-tablet' src = 'imagens/novos-tamanhos/conta1.png'> </a>
+                    <a href = 'pedidos.html'> <img class = 'imagens-tablet' src = 'imagens/novos-tamanhos/carrinho.png'> </a>
+                    <a href = 'carrinho.html'> <img class = 'imagens-tablet' src = 'imagens/carro.png'> </a>
                 </div>
+                <div class = 'itens-menu' id = 'atalhos-fullscreen'>
+                    <a href = 'login.html' class = 'div-atalhos-fullscreen'> 
+                        <div>
+                            <img class = 'imagens-fullscreen' src = 'imagens/novos-tamanhos/conta1.png'>
+                        </div>
+                        <div>
+                            Minha Conta
+                        </div>
+                    </a>
+                    <a href = 'pedidos.html' class = 'div-atalhos-fullscreen'> 
+                        <div>
+                            <img class = 'imagens-fullscreen' src = 'imagens/novos-tamanhos/carrinho.png'>
+                        </div>
+                        <div>
+                            Pedidos
+                        </div>
+                        
+                    </a>
+                    <a href = 'carrinho.html' class = 'div-atalhos-fullscreen'>
+                        <div>
+                            <img class = 'imagens-fullscreen' src = 'imagens/carro.png'>
+                        </div>
+                        <div>Carrinho</div>
+                    </a>
+                </div>
+                
             </div>
             <nav id = 'hamburguer'>
                 <ul>
@@ -59,7 +84,6 @@
                     <li> <a href = 'figures.html'> Action Figures </a></li>
                 </ul>
             </nav>         
-        </div>
     </header>   
     <main>
         <div id = 'destaque'>
@@ -104,7 +128,7 @@
     </footer>
     <script>
         function mudou(){
-            if (window.innerWidth >= '600'){
+            if (window.innerWidth >= '604'){
                 hamburguer.style.display = 'none';
             }
             else{
