@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = 'stylesheet' href = 'css/header.css' media = 'all'>
+    <link rel = 'stylesheet' href = 'css/header_footer.css' media = 'all'>
     
     <link rel = 'stylesheet' href = 'css/home.css'
     
@@ -14,18 +14,25 @@
 <body onresize = 'mudou()'>
     <header>
         <div class = 'menu'>
-            <div class = 'div_menu div_logo'>
-                <img class = 'logo' src = 'imagens/logo.png'> 
-            </div>
+            <a href = 'index.html'>
+                <div class = 'div_menu div_logo'>
+                    <img class = 'logo' src = 'imagens/logo3.png'>
+                    <div class = 'nome'>
+                        Sakura<span>World</span>
+                    </div>
+                </div>
+            </a>
             <div class = 'div_menu div_atalhos'>
-                <img class = 'atalhos' onclick = 'abrirPesquisa()' src = 'imagens/a.png'>
-                <img class = 'atalhos' src = 'imagens/carro.png'>
+                <img class = 'atalhos' onclick = 'abrirPesquisa(); borrar()' src = 'imagens/a.png'>
+                <a href = 'carrinho.html'>
+                    <img class = 'atalhos' src = 'imagens/carro.png'>
+                </a>
                 <img class = 'atalhos' onclick = 'abrirNav()' src = 'imagens/novos-tamanhos/barrinhas.png'>
             </div>
         </div>
         <div id = 'div_pesquisa'>
             <form>
-                <input type = 'search' name = 'pesquisa' id = 'pesquisa'>
+                <input type = 'search' name = 'pesquisa' id = 'pesquisa' placeholder = 'Busque por um título!'>
             </form>
         </div>
         <nav id = 'menu_hamburguer'>
@@ -54,40 +61,52 @@
             <img id = 'centro' src = 'imagens/central.jpg'>
         </div>
         <h1 class = ''> Mais Vendidos </h1>
-        <div class = 'vitrine'> a 
-        </div>
-        <div class = 'vitrine'> ab
+        <div class = 'vitrine'>
+            <div class = 'div_vitrine'>
+                <a class = 'produtos' href="#"> <img class = 'produtos_imagem' src = 'imagens/teste.png'> </a>
+                <a class = 'produtos' href="#"><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href="#"><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+            </div>
+            <div class = 'div_vitrine'>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+            </div>
         </div>
         <h1 class = ''> Lançamentos </h1>
-        <div class = 'vitrine'> a 
-        </div>
-        <div class = 'vitrine'> ab
+        <div class = 'vitrine'>
+            <div class = 'div_vitrine'>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+            </div>
+            <div class = 'div_vitrine'>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+            </div>
         </div>
     </main>
     <footer>
-        <div class = 'informacoes'>
-            <ul>
-                <li class = 'topico'> Sobre  </li>
-                <li class = 'subtopicos'> <a  href="historia.html"> A Sakura World </a></li>
-                <li class = 'subtopicos'> <a  href="sobre-produtos.html"> Nossos Produtos </a> </li>
-                <li class = 'subtopicos'> <a  href="garantia.html"> Garantia </a> </li>
-            </ul>
-        </div>
-        <div class = 'informacoes'>
-            <ul>
-                <li class = 'topico'> Ajuda </li>
-                <li class = 'subtopicos'> <a  href="perguntas.html"> Perguntas Frequentes </a> </li>
-                <li class = 'subtopicos'> <a  href="formas-pagamento.html"> Formas de Pagamento </a> </li>
-                <li class = 'subtopicos'> <a  href="formas-envio.html"> Formas de Envio </a> </li>
-            </ul>
-        </div>
-        <div class = 'informacoes'>
-            <ul>
-                <li class = 'topico' id = 'contato'> Contato </li>
-                <li class = 'redes'> <a href = 'http://www.instagram.com' target = '_blank'><img class = 'redes-sociais' src = 'imagens/instagram.png'></a> </li>
-                <li class = 'redes'> <a href = 'http://www.twitter.com' target = '_blank'> <img class = 'redes-sociais' src = 'imagens/twitter.png'></a> </li>
-                <li class = 'redes'> <a href = 'http://www.facebook.com' target = '_blank'> <img class = 'redes-sociais' src = 'imagens/facebook.png'> </a> </li>   
-            </ul>
+        <div class = 'info'>
+            <div class = 'div_info'>
+                <h1> Sobre </h1>
+                <a class = 'topicos' href="">A Sakura World</a>
+                <a class = 'topicos' href="">Nossos Produtos</a>
+                <a class = 'topicos' href="">Garantia</a>
+            </div>
+            <div class = 'div_info'>
+                <h1> Ajuda </h1>
+                <a class = 'topicos' href="">Perguntas Frequentes</a>
+                <a class = 'topicos' href="">Pagamento</a>
+                <a class = 'topicos' href="">Envio</a>
+            </div>
+            <div class = 'div_info'>
+                <h1> Contato </h1>
+                <a href = ''> <img class = 'redes_sociais' src = 'imagens/instagram.png'</a>
+                <a href = ''> <img class = 'redes_sociais' src = 'imagens/twitter.png'></a>
+                <a href = ''> <img class = 'redes_sociais' src = 'imagens/facebook.png'> </a>
+            </div>
         </div>
     </footer>
     <script>
@@ -117,6 +136,7 @@
                 div_pesquisa.style.display = 'block';
             }
         }
+
 
     </script>
 </body>
