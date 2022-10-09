@@ -4,86 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = 'stylesheet' href = 'css/style.css' media = 'all'>
-    <link rel = 'stylesheet' href = 'css/media-query.css'>
+    <link rel = 'stylesheet' href = 'css/header.css' media = 'all'>
+    
+    <link rel = 'stylesheet' href = 'css/home.css'
     
     <link rel = 'stylesheet' href = 'css/home.css'>
     <title> Loja </title>
 </head>
 <body onresize = 'mudou()'>
     <header>
-            <div  id = 'menu'>
-                <div class = 'itens-menu' id = 'div-logo'> 
-                    <a href = 'index.html'> <img id = 'logo' src = 'imagens/logo.png'> </a>
-                </div>
-                <div class = 'itens-menu' id = 'div-pesquisa'>
-                    <form>
-                        <input type = 'search' name = 'pesquisa' id = 'ipesquisa'>
-                    </form>
-                </div>
-                <div class = 'itens-menu' id = 'div-atalhos'>
-                    <div class = 'div-imagens'>
-                        <a href = 'carrinho.html'>
-                            <img class = 'imagem-atalho' src = 'imagens/carro.png'>
-                        </a>
-                    </div>
-                    <div class = 'div-imagens'>
-                        <img class = 'imagem-atalho' id = 'barrinha' onclick = 'abrirMenu()' src = 'imagens/novos-tamanhos/barrinhas.png'>
-                    </div>
-                </div>
-
-                <div class = 'itens-menu' id = 'atalhos-tablet'>
-                    <a href = 'login.html'> <img class = 'imagens-tablet' src = 'imagens/novos-tamanhos/conta1.png'> </a>
-                    <a href = 'pedidos.html'> <img class = 'imagens-tablet' src = 'imagens/novos-tamanhos/carrinho.png'> </a>
-                    <a href = 'carrinho.html'> <img class = 'imagens-tablet' src = 'imagens/carro.png'> </a>
-                </div>
-                <div class = 'itens-menu' id = 'atalhos-fullscreen'>
-                    <a href = 'login.html' class = 'div-atalhos-fullscreen'> 
-                        <div>
-                            <img class = 'imagens-fullscreen' src = 'imagens/novos-tamanhos/conta1.png'>
-                        </div>
-                        <div>
-                            Minha Conta
-                        </div>
-                    </a>
-                    <a href = 'pedidos.html' class = 'div-atalhos-fullscreen'> 
-                        <div>
-                            <img class = 'imagens-fullscreen' src = 'imagens/novos-tamanhos/carrinho.png'>
-                        </div>
-                        <div>
-                            Pedidos
-                        </div>
-                        
-                    </a>
-                    <a href = 'carrinho.html' class = 'div-atalhos-fullscreen'>
-                        <div>
-                            <img class = 'imagens-fullscreen' src = 'imagens/carro.png'>
-                        </div>
-                        <div>Carrinho</div>
-                    </a>
-                </div>
-                
+        <div class = 'menu'>
+            <div class = 'div_menu div_logo'>
+                <img class = 'logo' src = 'imagens/logo.png'> 
             </div>
-            <nav id = 'hamburguer'>
-                <ul>
-                    <li> <a href = 'login.html'> Minha Conta </a> </li>
-                    <li> <a href = 'pedidos.html'> Meus Pedidos </a> </li>
-                    <li> <a href = 'carrinho.html'> Seu Carrinho</a></li>
-                    <li> <a href = 'mangas.html'> Mangás </a> </li>
-                    <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
-                    <li> <a href = 'livros.html'> Livros </a></li>
-                    <li> <a href = 'figures.html'> Action Figures </a></li>
-                </ul>
-            </nav>
-            <nav id = 'navegacao'>
-                <ul>
-                    <li> <a href = 'mangas.html'> Mangás </a> </li>
-                    <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
-                    <li> <a href = 'novels.html'> Light Novels </a> </li>
-                    <li> <a href = 'livros.html'> Livros </a></li>
-                    <li> <a href = 'figures.html'> Action Figures </a></li>
-                </ul>
-            </nav>         
+            <div class = 'div_menu div_atalhos'>
+                <img class = 'atalhos' onclick = 'abrirPesquisa()' src = 'imagens/a.png'>
+                <img class = 'atalhos' src = 'imagens/carro.png'>
+                <img class = 'atalhos' onclick = 'abrirNav()' src = 'imagens/novos-tamanhos/barrinhas.png'>
+            </div>
+        </div>
+        <div id = 'div_pesquisa'>
+            <form>
+                <input type = 'search' name = 'pesquisa' id = 'pesquisa'>
+            </form>
+        </div>
+        <nav id = 'menu_hamburguer'>
+            <ul>
+                <li> <a href = 'login.html'> Minha Conta </a> </li>
+                <li> <a href = 'pedidos.html'> Meus Pedidos </a> </li>
+                <li> <a href = 'carrinho.html'> Seu Carrinho</a></li>
+                <li> <a href = 'mangas.html'> Mangás </a> </li>
+                <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
+                <li> <a href = 'livros.html'> Livros </a></li>
+                <li> <a href = 'figures.html'> Action Figures </a></li>
+            </ul>
+        </nav>
+        <nav id = 'navegacao'>
+            <ul>
+                <li> <a href = 'mangas.html'> Mangás </a> </li>
+                <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
+                <li> <a href = 'novels.html'> Light Novels </a> </li>
+                <li> <a href = 'livros.html'> Livros </a></li>
+                <li> <a href = 'figures.html'> Action Figures </a></li>
+            </ul>
+        </nav>         
     </header>   
     <main>
         <div id = 'destaque'>
@@ -129,19 +93,28 @@
     <script>
         function mudou(){
             if (window.innerWidth >= '604'){
-                hamburguer.style.display = 'none';
+                menu_hamburguer.style.display = 'none';
             }
             else{
-                hamburguer.style.display = 'block'
+                menu_hamburguer.style.display = 'block'
             }
         }
-        function abrirMenu(){
-            if (hamburguer.style.display == 'block'){
-                hamburguer.style.display = 'none';
+        function abrirNav(){
+            if (menu_hamburguer.style.display == 'block'){
+                menu_hamburguer.style.display = 'none';
             }
             else {
-                hamburguer.style.display = 'block';
+                menu_hamburguer.style.display = 'block';
 
+            }
+        }
+
+        function abrirPesquisa(){
+            if (div_pesquisa.style.display == 'block'){
+                div_pesquisa.style.display = 'none'
+            }
+            else{
+                div_pesquisa.style.display = 'block';
             }
         }
 

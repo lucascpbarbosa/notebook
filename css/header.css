@@ -28,86 +28,91 @@
 
 html, body{
     height: 100vh;
+    
 }
 
 header{
     width: 100%;
-    background-color: var(--cor1);
+    background-color: white;
 } 
 
-#menu{
+.menu{
     display: flex;
-    justify-content: center;
+    height: 100px;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    text-align: center;
+}
+
+
+.div_menu{
+    width: 150px;
+
+}
+.div_logo{
+    margin-left: 10px;
+}
+.logo{
     width: 100%;
 }
 
-.itens-menu{
-    width: 150px;
-    flex-shrink: 1;
-}
-
-#div-logo{
+#div_pesquisa{
+    display: none;
+    background-color: var(--cor0);
+    padding: 20px;
     
 }
 
-#logo{
-    width: 100%;
+
+#pesquisa{
+    display: block;
+    width: 70%;
+    margin: auto;
+    border: 2px solid var(--cor4);
+    border-radius: 10px;
+    color: var(--cor4);
+    padding: 3px;
+    
 }
 
-#div-pesquisa{
-    align-self: flex-end;
-    margin-bottom: 2.5%;
- 
-}
-
-#ipesquisa{
-    width: 100%;
-    border: 2.6px solid var(--cor4);
-    border-radius: 5px;
-    background-color: var(--cor1);
-    cursor: pointer;
-}
-
-#div-atalhos{
+.div_atalhos{
     display: flex;
-    gap: 5px;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    top: 15%;
+}
+
+.atalhos{
+    width: 15%;
+    
+}
+
+#menu_hamburguer{
+    display: none;
+    background-color: white;
     text-align: center;
-    align-self: flex-end;
-    margin-bottom: 1.5%;
-}
 
-.div-imagens{
-    width: 100%;
-}
-
-.imagem-atalho{
-    width: 30px;
-    height: 30px;
-}
-
-
-
-#hamburguer{
-    text-align: center;
-    background-color: var(--cor2);
-    padding: 5px 0px;
-}
-#hamburguer > ul > li{
-    margin: 15px 0px;
 
 }
 
-#hamburguer > ul > li:hover{
-    transform: translate(0%, -3%);
-}
-#hamburguer > ul > li > a{
-    color: white;
-    text-decoration: none;
-    margin: 100px 0px;
+#menu_hamburguer > ul{
+    list-style: none;
+    padding: 10px;
+
 }
 
+#menu_hamburguer > ul > li{
+    margin-left: 40px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+}
+
+#menu_hamburguer > ul > li > a{
+    font-weight: bold;
+    color: var(--cor1);
+}
 
 footer{
     background-color: var(--cor4);
