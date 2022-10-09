@@ -1,0 +1,47 @@
+/* Typical Device Breakpoints
+
+==================
+
+Telas pequeneas: até 600px
+Celulares: de 600px até 768px
+Tablets: de 768px até 992px
+Desktops: de 992px até 1200px
+Telas grandes: acima de 1200px
+
+====================
+
+*/
+
+@media screen and (min-width: 650px) and (max-width: 1000px) {
+        .div_info{
+            width: 250px;
+        }
+}
+
+@media screen and (min-width: 950px) {
+    #div-atalhos, #atalhos-tablet, #hamburguer{
+        display: none;
+    }
+
+   
+    .itens-menu{
+        width: 250px;
+    }
+   #atalhos-fullscreen{
+    display: flex;
+    align-self: flex-end;
+   }
+
+   .imagens-fullscreen{
+    width: 50%;
+   }
+
+   .div-atalhos-fullscreen{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+
+   }
+
+    
+}

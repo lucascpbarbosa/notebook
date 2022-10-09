@@ -104,7 +104,7 @@ header{
 
 #pesquisa{
     display: block;
-    width: 250px;
+    width: 100%;
     margin: auto;
     border: 2px solid var(--cor4);
     border-radius: 10px;
@@ -161,13 +161,14 @@ footer{
 
 .info{
     display: flex;
-    text-align: center;
     justify-content: center;
-    gap: 30px;
+    text-align: center;
+    flex-wrap: wrap;
+
 }
 
 .div_info{
-    width: 120px;
+    width: 200px;
     padding-bottom: 20px;
 }
 
@@ -182,10 +183,35 @@ footer{
     display: block;
     text-decoration: none;
     color: white;
-    font-size: 0.9em;
+    font-size: 1em;
     margin-top: 5px;
 }
 
+
+#assinatura{
+    width: 200px;
+    border: 3px solid var(--cor2);
+    background-color: var(--cor4);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#assinatura::placeholder{
+    text-align: center;
+    color: white;
+}
+
+
+#assinar{
+    background-color: var(--cor1);
+    border: 1px solid var(--cor4);
+    border-radius: 10px;
+    padding: 3px 10px;
+    color: white;
+    cursor: pointer;
+}
 .redes_sociais{
     width: 30px;
     margin-right: 5px;
