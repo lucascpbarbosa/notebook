@@ -1,0 +1,30 @@
+/* Typical Device Breakpoints
+
+==================
+
+Telas pequeneas: até 600px
+Celulares: de 600px até 768px
+Tablets: de 768px até 992px
+Desktops: de 992px até 1200px
+Telas grandes: acima de 1200px
+
+====================
+Breakpoints usados: 650px até 950px (tablet) e 950px pra cima (telas maiores)
+*/
+
+@media screen and (min-width: 650px) and (max-width: 950px){
+    #destaque{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (min-width: 950px){
+    #destaque{
+        width: 77%;
+        max-width: 1435.270px;
+        margin: auto;
+        margin-top: 20px;
+    }
+}

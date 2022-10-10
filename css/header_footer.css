@@ -12,7 +12,7 @@
     --fonte: 'Fira Sans';
 }
 /* Menus escondidos para mobile-first */
-#navegacao{
+.div_pesquisa_full, .conta, .pedidos, .navegacao{
     display: none;
 }
 
@@ -52,8 +52,8 @@ header{
 
 }
 .div_logo{
+    width: 192px;
     margin-left: 10px;
-    width: 300px;
     display: flex;
     align-items: center;
     
@@ -86,8 +86,13 @@ header{
 }
 
 .atalhos{
-    width: 22.05px;
+    width: 25px;
     height: 25px;
+}
+
+
+.atalhos:hover{
+    transform: translate(0%, -5%);
 }
 
 /* Barra de pesquisa mobile */

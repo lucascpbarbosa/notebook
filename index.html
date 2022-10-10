@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = 'stylesheet' href = 'css/header_footer.css' media = 'all'>
     <link rel = 'stylesheet' href = 'css/header_footer_query.css'>
-    
-    <link rel = 'stylesheet' href = 'css/home.css'
-    
     <link rel = 'stylesheet' href = 'css/home.css'>
+    <link rel = 'stylesheet' href = 'css/home_querry.css'>
     <title> Loja </title>
 </head>
 <body onresize = 'mudou()'>
@@ -23,17 +21,28 @@
                     </div>
                 </div>
             </a>
+            <div class = 'div_pesquisa_full'>
+                <form>
+                    <input type = 'search' name = 'pesquisa' id = 'pesquisa'  placeholder = 'Busque por um título!'>
+                </form>
+            </div>
             <div class = 'div_menu div_atalhos'>
-                <img class = 'atalhos' onclick = 'abrirPesquisa(); borrar()' src = 'imagens/a.png'>
-                <a href = 'carrinho.html'>
-                    <img class = 'atalhos' src = 'imagens/carro.png'>
+                <a href = 'login.html'>
+                    <img class = 'atalhos conta' src = 'imagens/novos-tamanhos/conta1.png'>
                 </a>
-                <img class = 'atalhos' onclick = 'abrirNav()' src = 'imagens/novos-tamanhos/barrinhas.png'>
+                <a href = 'pedidos.html'>
+                    <img class= 'atalhos pedidos' src = 'imagens/novos-tamanhos/carrinho.png'>
+                </a>
+                <img class = 'atalhos pesquisa' onclick = 'abrirPesquisa(); borrar()' src = 'imagens/a.png'>
+                <a href = 'carrinho.html'>
+                    <img class = 'atalhos carrinho' src = 'imagens/carro.png'>
+                </a>
+                <img class = 'atalhos barrinha' onclick = 'abrirNav()' src = 'imagens/novos-tamanhos/barrinhas.png'>
             </div>
         </div>
         <div id = 'div_pesquisa'>
             <form>
-                <input type = 'search' name = 'pesquisa' id = 'pesquisa' placeholder = 'Busque por um título!'>
+                <input type = 'search' name = 'pesquisa' id = 'pesquisa'  placeholder = 'Busque por um título!'>
             </form>
         </div>
         <nav id = 'menu_hamburguer'>
@@ -47,14 +56,22 @@
                 <li> <a href = 'figures.html'> Action Figures </a></li>
             </ul>
         </nav>
-        <nav id = 'navegacao'>
-            <ul>
-                <li> <a href = 'mangas.html'> Mangás </a> </li>
-                <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
-                <li> <a href = 'novels.html'> Light Novels </a> </li>
-                <li> <a href = 'livros.html'> Livros </a></li>
-                <li> <a href = 'figures.html'> Action Figures </a></li>
-            </ul>
+        <nav class = 'navegacao'>
+            <div class = 'itens_nav'>
+                <a href = 'mangas.html'> Mangás </a> 
+            </div>
+            <div class = 'itens_nav'>
+                <a href = 'hqs.html'> Quadrinhos </a>
+            </div>
+            <div class = 'itens_nav'>
+                <a href = 'novels.html'> Light Novels </a> 
+            </div>
+            <div class = 'itens_nav'>
+                <a href = 'livros.html'> Livros </a>
+            </div>
+            <div class = 'itens_nav'>
+                <a href = 'figures.html'> Action Figures </a>
+            </div>
         </nav>         
     </header>   
     <main>
@@ -63,30 +80,50 @@
         </div>
         <h1 class = ''> Mais Vendidos </h1>
         <div class = 'vitrine'>
-            <div class = 'div_vitrine'>
                 <a class = 'produtos' href="#"> <img class = 'produtos_imagem' src = 'imagens/teste.png'> </a>
                 <a class = 'produtos' href="#"><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
                 <a class = 'produtos' href="#"><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
-            </div>
-            <div class = 'div_vitrine'>
                 <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
                 <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
                 <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
-            </div>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
         </div>
         <h1 class = ''> Lançamentos </h1>
         <div class = 'vitrine'>
-            <div class = 'div_vitrine'>
                 <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
                 <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
                 <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
-            </div>
-            <div class = 'div_vitrine'>
                 <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
                 <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
                 <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
-            </div>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+                <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
         </div>
+        <h1 class = ''> Histórico </h1>
+        <div class = 'vitrine'>
+            <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+            <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+            <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+            <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+            <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+            <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+            <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+            <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+            <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+            <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+            <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+            <a class = 'produtos' href=""><img class = 'produtos_imagem' src = 'imagens/teste.png'></a>
+    </div>
+
     </main>
     <footer>
         <div class = 'info'>
@@ -132,7 +169,7 @@
                 menu_hamburguer.style.display = 'none';
             }
             else{
-                menu_hamburguer.style.display = 'block'
+                menu_hamburguer.style.display = 'none'
             }
         }
         function abrirNav(){
