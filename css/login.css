@@ -1,1 +1,20 @@
 @charset 'UTF-8';
+
+main{
+    width: 98vw;
+    height: 100vh;
+    background-image: url(../imagens/cropped-1920-1080-733077.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container{
+    position: relative;
+    width: 80%;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 228, 196, 0.418);
+}
