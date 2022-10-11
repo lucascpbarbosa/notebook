@@ -54,6 +54,7 @@ html, body{
 
 .box_header > h1{
     color: white;
+    font-size: 2em;
 }
 
 .box_conteudo{
@@ -64,21 +65,51 @@ html, body{
 }
 
 .div-login{
-    height: 50%;
+    display: flex;
+    justify-content: center;
+    height: 60%;
 }
-
 
 .div-login > form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    justify-content: space-evenly;
 }
 
+.div-login > form > label > div{
+    margin-bottom: 15px;
+}
+
+.barra{
+    width: 250px;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 5px solid var(--cor2);
+    border-radius: 5px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botao{
+    background-color: var(--cor2);
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    width: 30%;
+}
+
+
+.div-imagem{
+    height: 40%;
+}
 .imagem{
     position: relative;
-    top: 50%;
+    top: 8%;
     background-image: url(../imagens/Meu\ projeto.png);
     height: 100%;
     background-size: contain;
