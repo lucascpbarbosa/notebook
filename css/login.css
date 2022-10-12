@@ -20,24 +20,48 @@
 }
 
 html, body{
-    width: 100%;
     height: 100vh;
 }
 
 .fundo{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor0);
+}
+
+.div-imagem{
+    width: 100%;
     height: 100%;
-    background-color: var(--cor1);
+}
+
+.imagem{
+    position: relative;
+    display: inline-block;
+    background-image: url(../imagens/Meu\ projeto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 220px;
+}
+
+.rem{
+    position: relative;
+    background-image: url(../imagens/Meu\ projeto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    max-width: 220px;
+    transform: scaleY(-1);
+    top: 658px;
 }
 
 .box{
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
-    width: 90%;
+    width: 85%;
     height: 60%;
     transform: translate(-50%, -50%);
-    background-color:rgb(255, 255, 255);
-    border: transparent;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.466);
     overflow: hidden;
@@ -48,8 +72,8 @@ html, body{
     background-color: var(--cor2);
     justify-content: center;
     align-items: center;
-    height: 50px;
-    margin-bottom: 20px;
+    height: 65px;
+    padding: 20px 0px;
 }
 
 .box_header > h1{
@@ -58,10 +82,11 @@ html, body{
 }
 
 .box_conteudo{
-    height: 100%;
+    background-color:rgb(255, 255, 255);
+    height: 510px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .div-login{
@@ -74,45 +99,61 @@ html, body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .div-login > form > label > div{
     margin-bottom: 15px;
 }
 
+
 .barra{
     width: 250px;
     border-top: transparent;
     border-right: transparent;
     border-left: transparent;
-    border-bottom: 5px solid var(--cor2);
+    border-bottom: 5px solid gray;
     border-radius: 5px;
 }
 
-.botoes{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.barra::placeholder{
+    text-align: center;
+    color: rgba(128, 128, 128, 0.5);
+    font-size: 1.2em;
+}
+.barra:hover{
+    border-bottom: 5px solid var(--cor1);
+}
+
+.barra:focus{
+    outline: none;
+}
+
+.esquecer{
+    align-self: initial;
+    font-size: 0.9em;
+    
 }
 
 .botao{
     background-color: var(--cor2);
     color: white;
-    padding: 5px;
     font-weight: bold;
-    width: 30%;
+    width: 50%;
+    border: transparent;
+    border-radius: 10px;
+    padding: 5px 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.39);
 }
 
-
-.div-imagem{
-    height: 40%;
+.criar_conta{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
 }
-.imagem{
-    position: relative;
-    top: 8%;
-    background-image: url(../imagens/Meu\ projeto.png);
-    height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+
+.criar_conta > a{
+    color: var(--cor1);
+    text-decoration: none;
+
 }

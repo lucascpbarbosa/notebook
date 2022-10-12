@@ -11,34 +11,39 @@
 </head>
 <body>
     <main class = 'fundo'>
+        <div class = 'div-imagem'>
+            <div class = 'imagem'></div>
+            <div class = 'imagem rem'></div>
+        </div>
         <section class = 'box'>
             <div class = 'box_header'>
-                <h1> Login </h1>
+                <h1> Faça seu login! </h1>
             </div>
             <div class = 'box_conteudo'>
                 <div class = 'div-login'>
                     <form>
-                        <label for = 'usuario'>
-                            <div>Usuário</div>
-                            <input type = 'text' name = 'usuario' id = 'usuario' class = 'barra'>
+                        <label for = 'usuario' >
+                            <div onclick = 'mudouCor()'>
+                                <input type = 'text' name = 'usuario' id = 'usuario' class = 'barra' placeholder = 'Usuário'>
+                            </div>
                         </label>
                         <label for = 'senha'>
-                            <div>Senha</div>
-                            <input type = 'password' name = 'senha' id = 'senha' class = 'barra'>
+                            <div onclick = 'mudouCorr()'>
+                                <input type = 'password' name = 'senha' id = 'senha'  class = 'barra' placeholder = 'Senha'>
+                            </div>
                         </label>
-                        <a> Esqueceu sua senha? </a>
-                        <div class = 'botoes'>
-                            <input type = 'button' value = 'Login' class = 'botao'>
-                            <input type = 'button' value = 'Registrar' class = 'botao'>
+                        <div class = 'esquecer'>
+                            <a> Esqueceu sua senha? </a>
+                        </div>
+                        <input type = 'button' value = 'Login' class = 'botao'>
+                        <div class = 'criar_conta'> 
+                            <p>Ainda não possui uma conta?! </p>
+                            <a href = 'criar.html'> Registre-se já! </a>
                         </div>
                     </form>
-                </div>
-                <div class = 'div-imagem'>
-                    <div class = 'imagem'></div>
                 </div>
             </div>
         </section>
     </main>
- 
 </body>
 </html>
