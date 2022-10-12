@@ -26,7 +26,7 @@ html, body{
 .fundo{
     width: 100vw;
     height: 100vh;
-    background-color: var(--cor0);
+    background-image: linear-gradient(to right bottom, var(--cor0), var(--cor1));
 }
 
 .div-imagem{
@@ -85,8 +85,8 @@ html, body{
     background-color:rgb(255, 255, 255);
     height: 510px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .div-login{
@@ -99,21 +99,10 @@ html, body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 .div-login > form > label > div{
     margin-bottom: 15px;
-}
-
-
-.barra{
-    width: 250px;
-    border-top: transparent;
-    border-right: transparent;
-    border-left: transparent;
-    border-bottom: 5px solid gray;
-    border-radius: 5px;
 }
 
 .barra::placeholder{
@@ -121,21 +110,43 @@ html, body{
     color: rgba(128, 128, 128, 0.5);
     font-size: 1.2em;
 }
+
+.barra{
+    align-self: center;
+    width: 100%;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 5px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--cor2);
+}
+
+
 .barra:hover{
-    border-bottom: 5px solid var(--cor1);
+    border-bottom: 5px solid var(--cor0);
 }
 
 .barra:focus{
     outline: none;
 }
 
-.esquecer{
-    align-self: initial;
-    font-size: 0.9em;
+.tentar_e_entrar{
+    display: flex;
+    font-size: 1em;
+
+}
+
+.tentar_e_entrar > a{
+    text-decoration: none;
+    color: black;
     
 }
 
 .botao{
+    align-self: center;
     background-color: var(--cor2);
     color: white;
     font-weight: bold;
@@ -144,10 +155,16 @@ html, body{
     border-radius: 10px;
     padding: 5px 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.39);
+    cursor: pointer;
+}
+
+.botao:hover{
+    transform: translateY(-2%);
 }
 
 .criar_conta{
-    width: 100%;
+    display: flex;
+    flex-flow: column;
     text-align: center;
     font-size: 1.2em;
 }
@@ -156,4 +173,8 @@ html, body{
     color: var(--cor1);
     text-decoration: none;
 
+}
+
+a:hover{
+    transform: translateY(-3%);
 }

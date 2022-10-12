@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = 'stylesheet' href = 'css/login.css' media = 'all'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel = 'stylesheet' href = 'css/login_querry.css'>
     <title> Login </title>
 </head>
 <body>
@@ -21,21 +20,21 @@
             </div>
             <div class = 'box_conteudo'>
                 <div class = 'div-login'>
-                    <form>
+                    <form action="POST">
                         <label for = 'usuario' >
                             <div onclick = 'mudouCor()'>
-                                <input type = 'text' name = 'usuario' id = 'usuario' class = 'barra' placeholder = 'Usuário'>
+                                <input type = 'text' name = 'usuario' id = 'usuario' class = 'barra' required placeholder = 'Usuário' maxlength = '8'>
                             </div>
                         </label>
                         <label for = 'senha'>
                             <div onclick = 'mudouCorr()'>
-                                <input type = 'password' name = 'senha' id = 'senha'  class = 'barra' placeholder = 'Senha'>
+                                <input type = 'password' name = 'senha' id = 'senha'  class = 'barra'  required placeholder = 'Senha'>
                             </div>
                         </label>
-                        <div class = 'esquecer'>
-                            <a> Esqueceu sua senha? </a>
+                        <div class = 'tentar_e_entrar'>
+                            <a href = 'mudar_senha.html'> Esqueceu sua senha? </a>
+                            <input type = 'submit' value = 'Login' class = 'botao'>
                         </div>
-                        <input type = 'button' value = 'Login' class = 'botao'>
                         <div class = 'criar_conta'> 
                             <p>Ainda não possui uma conta?! </p>
                             <a href = 'criar.html'> Registre-se já! </a>
