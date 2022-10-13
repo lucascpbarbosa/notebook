@@ -10,34 +10,34 @@
 </head>
 <body>
     <main>
-        <div class = 'ram'>
-            <img src = 'imagens/ram.png'>
+        <div class = 'decoracao'>
+            <img class = 'top_deco' src = 'imagens/ram.png'>
         </div>
-        <div class = 'box_header'>
-            <h1> Faça seu login! </h1>
-        </div>
-        <section class = 'box'>
-            <div class = 'box_conteudo'>
-            <form action="POST">
-            <label for = 'usuario' >
-            <input type = 'text' name = 'usuario' id = 'usuario' class = 'barra' required placeholder = 'Usuário' maxlength = '8'>
-            </label>
-            <label for = 'senha'>
-            <input type = 'password' name = 'senha' id = 'senha'  class = 'barra'  required placeholder = 'Senha'>
-            </label>
-            <div class = 'tentar_e_entrar'>
-            <a href = 'mudar_senha.html'> Esqueceu sua senha? </a>
-            <input type = 'submit' value = 'Login' class = 'botao'>
+        <div class = 'box'>
+            <div class = 'box_header'>
+                <h1> Faça seu login! </h1>
             </div>
-            <div>
-            <p>Ainda não possui uma conta?! </p>
-            <a href = 'criar.html'> Registre-se já! </a>
+            <div class = 'box_conteudo'>            
+                    <form action="POST">
+                    <label for = 'usuario' >
+                    <input type = 'text' name = 'usuario' id = 'usuario' class = 'barra' required placeholder = 'Usuário' maxlength = '8'>
+                    </label>
+                    <label for = 'senha'>
+                    <input type = 'password' name = 'senha' id = 'senha'  class = 'barra'  required placeholder = 'Senha'>
+                    </label>
+                    <div class = 'tentar_e_entrar'>
+                    <a href = 'mudar_senha.html'> Esqueceu sua senha? </a>
+                    <input type = 'submit' value = 'Login' class = 'botao'>
+                    </div>
+                    <div class = 'criar_conta'>
+                        <p>Ainda não possui uma conta?! </p>
+                        <a href = 'criar.html'> Registre-se já! </a>
+                    </div>
+                </form>
             </div>
-            </form>
         </div>
-        </section>
-        <div class = 'rem'> 
-            <img src = 'imagens/rem.png'>
+        <div class = 'decoracao'> 
+            <img class = 'bot_deco' src = 'imagens/rem.png'>
         </div>
     </main>
 </body>
