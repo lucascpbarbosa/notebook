@@ -9,40 +9,36 @@
     <title> Login </title>
 </head>
 <body>
-    <main class = 'fundo'>
-        <div class = 'div-imagem'>
-            <div class = 'imagem'></div>
-            <div class = 'imagem rem'></div>
+    <main>
+        <div class = 'ram'>
+            <img src = 'imagens/ram.png'>
+        </div>
+        <div class = 'box_header'>
+            <h1> Faça seu login! </h1>
         </div>
         <section class = 'box'>
-            <div class = 'box_header'>
-                <h1> Faça seu login! </h1>
-            </div>
             <div class = 'box_conteudo'>
-                <div class = 'div-login'>
-                    <form action="POST">
-                        <label for = 'usuario' >
-                            <div onclick = 'mudouCor()'>
-                                <input type = 'text' name = 'usuario' id = 'usuario' class = 'barra' required placeholder = 'Usuário' maxlength = '8'>
-                            </div>
-                        </label>
-                        <label for = 'senha'>
-                            <div onclick = 'mudouCorr()'>
-                                <input type = 'password' name = 'senha' id = 'senha'  class = 'barra'  required placeholder = 'Senha'>
-                            </div>
-                        </label>
-                        <div class = 'tentar_e_entrar'>
-                            <a href = 'mudar_senha.html'> Esqueceu sua senha? </a>
-                            <input type = 'submit' value = 'Login' class = 'botao'>
-                        </div>
-                        <div class = 'criar_conta'> 
-                            <p>Ainda não possui uma conta?! </p>
-                            <a href = 'criar.html'> Registre-se já! </a>
-                        </div>
-                    </form>
-                </div>
+            <form action="POST">
+            <label for = 'usuario' >
+            <input type = 'text' name = 'usuario' id = 'usuario' class = 'barra' required placeholder = 'Usuário' maxlength = '8'>
+            </label>
+            <label for = 'senha'>
+            <input type = 'password' name = 'senha' id = 'senha'  class = 'barra'  required placeholder = 'Senha'>
+            </label>
+            <div class = 'tentar_e_entrar'>
+            <a href = 'mudar_senha.html'> Esqueceu sua senha? </a>
+            <input type = 'submit' value = 'Login' class = 'botao'>
             </div>
+            <div>
+            <p>Ainda não possui uma conta?! </p>
+            <a href = 'criar.html'> Registre-se já! </a>
+            </div>
+            </form>
+        </div>
         </section>
+        <div class = 'rem'> 
+            <img src = 'imagens/rem.png'>
+        </div>
     </main>
 </body>
 </html>

@@ -20,89 +20,49 @@
 }
 
 html, body{
-    height: 100vh;
-}
-
-.fundo{
     width: 100vw;
     height: 100vh;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(to right bottom, var(--cor0), var(--cor1));
+    height: 100vh;
+    width: 100vw;
 }
 
-.div-imagem{
-    width: 100%;
-    height: 100%;
-}
-
-.imagem{
-    position: relative;
-    display: inline-block;
-    background-image: url(../imagens/Meu\ projeto.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 300px;
-    width: 220px;
-}
-
-.rem{
-    position: relative;
-    background-image: url(../imagens/Meu\ projeto.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-    max-width: 220px;
-    transform: scaleY(-1);
-    top: 658px;
-}
-
-.box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 85%;
-    height: 60%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.466);
-    overflow: hidden;
+.rem > img{
+    float: right;
+    width: 100px;
 }
 
 .box_header{
-    display: flex;
+    width: 300px;
     background-color: var(--cor2);
-    justify-content: center;
-    align-items: center;
-    height: 65px;
+    text-align: center;
+    color: white;
     padding: 20px 0px;
 }
 
-.box_header > h1{
-    color: white;
-    font-size: 2em;
-}
-
-.box_conteudo{
-    background-color:rgb(255, 255, 255);
-    height: 510px;
+.box{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    width: 300px;
+    height: 450px;
+    
 }
 
-.div-login{
-    display: flex;
-    justify-content: center;
-    height: 60%;
-}
-
-.div-login > form{
+form{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.div-login > form > label > div{
-    margin-bottom: 15px;
+    gap: 20px;
+    width: 200px;
 }
 
 .barra::placeholder{
