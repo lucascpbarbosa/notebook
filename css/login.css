@@ -34,23 +34,7 @@ main{
     height: 958px;
 }
 
-.decoracao{
-    position: relative;
-    width: 300px;
 
-}
-
-.top_deco {
-    width: 100px;
-    float: left;
-}
-
-
-.bot_deco{
-    width: 100px;
-    float: right;
-    transform: scaleY(-1);
-}
 
 .box{
     border-radius: 20px;
