@@ -31,17 +31,39 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 958px;
+    height: 900px;
+
 }
 
 
 
 .box{
+    position: absolute;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.37);
 }
 
+.decoracao{
+    width: 300px;
+
+}
+
+.top_deco {
+    position: relative;
+    top: -275px;
+    width: 100px;
+    float: left;
+}
+
+
+.bot_deco{
+    position: relative;
+    top: 275px;
+    width: 100px;
+    float: right;
+    transform: scaleY(-1);
+}
 .box_header{
     display: flex;
     justify-content: center;
