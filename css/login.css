@@ -37,11 +37,20 @@ main{
 
 
 .box{
-    width: 300px;
+    display: flex;
+    flex-direction: row;
     position: absolute;
+    width: 300px;
+    height: 528px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.37);
+}
+.box_um{
+    width: 100%;
+}
+.box_dois{
+    display: none;
 }
 
 .decoracao{
@@ -68,8 +77,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    min-height: 78px;
+    height: 78px;
     background-color: var(--cor2);
     color: white;
 }
@@ -80,7 +88,6 @@ main{
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 100%;
     height: 450px;
 }
 
