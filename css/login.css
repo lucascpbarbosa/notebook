@@ -21,26 +21,22 @@
 
 html, body{
     height: 100vh;
+    width: 100vw;
     background-image: linear-gradient(to right bottom, var(--cor0), var(--cor1))
 
 }
 
 main{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 900px;
-
+    height: 100vh;
 }
 
 
 
 .box{
-    display: flex;
-    flex-direction: row;
     position: absolute;
- 
     width: 300px;
     height: 528px;
     border-radius: 20px;
@@ -51,9 +47,7 @@ main{
 
     
 }
-.box_um{
-    width: 100%;
-}
+
 .box_dois{
     display: none;
 }
@@ -65,7 +59,7 @@ main{
 
 .top_deco {
     position: relative;
-    top: -275px;
+    top: -290px;
     width: 100px;
     float: left;
 }
@@ -73,7 +67,7 @@ main{
 
 .bot_deco{
     position: relative;
-    top: 275px;
+    top: 290px;
     width: 100px;
     float: right;
     transform: scaleY(-1);

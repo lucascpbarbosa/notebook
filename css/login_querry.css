@@ -18,6 +18,8 @@
         width: 175px;
     }
     .box{
+        display: flex;
+        flex-direction: row;
         width: 600px;
     }
 
