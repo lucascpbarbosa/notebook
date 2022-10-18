@@ -4,83 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = 'stylesheet' href = 'css/style.css'>
+    <link rel = 'stylesheet' href = 'css/header_footer.css' media = 'all'>
+    <link rel = 'stylesheet' href = 'css/header_footer_query.css'>
     <link rel = 'stylesheet' href = 'css/carrinho.css'>
+    <script src = 'script_header.js'> </script>
+
+    
     <title> Seu Carrinho </title>
 </head>
-<body>
+<body onresize = 'mudou()'>
     <header>
-        <a href = 'index.html' target = '_self'>
-            <div id = 'logo'>
-                <img src = 'imagens/logo.png' rel = 'Sakura World'>
+        <div class = 'menu'>
+            <a href = 'index.html'>
+                <div class = 'div_menu div_logo'>
+                    <img class = 'logo' src = 'imagens/logo3.png'>
+                    <div class = 'nome'>
+                        Sakura<span>World</span>
+                    </div>
+                </div>
+            </a>
+            <div class = 'div_pesquisa_full'>
+                <form>
+                    <input type = 'search' name = 'pesquisa' id = 'pesquisa'  placeholder = 'Busque por um título!'>
+                </form>
             </div>
-        </a>
-        <div id = 'pesquisar'>
-            <form action = 'pesquisa.py' autocomplete = 'off'>
-                <label for = 'bbusca'>
-                </label>
-                <input type = 'search' name = 'busca' id = 'bbusca' placeholder = 'Busque por títulos ;)'>
+            <div class = 'div_menu div_atalhos'>
+                <a href = 'login.html'>
+                    <img class = 'atalhos conta' src = 'imagens/novos-tamanhos/conta1.png'>
+                </a>
+                <a href = 'pedidos.html'>
+                    <img class= 'atalhos pedidos' src = 'imagens/novos-tamanhos/carrinho.png'>
+                </a>
+                <img class = 'atalhos pesquisa' onclick = 'abrirPesquisa(); borrar()' src = 'imagens/a.png'>
+                <a href = 'carrinho.html'>
+                    <img class = 'atalhos carrinho' src = 'imagens/carro.png'>
+                </a>
+                <img class = 'atalhos barrinha' onclick = 'abrirNav()' src = 'imagens/novos-tamanhos/barrinhas.png'>
+            </div>
+        </div>
+        <div id = 'div_pesquisa'>
+            <form>
+                <input type = 'search' name = 'pesquisa' id = 'pesquisa'  placeholder = 'Busque por um título!'>
             </form>
         </div>
-        <div id = 'nav'>
-            <a href = 'login.html' target = '_self'>
-                <img id = 'conta' class = 'header-nav-item' src = 'imagens/conta1.png' alt = 'Ícone de conta'>
-            </a>
-            <a class = 'header-nav-item' href = 'pedidos.html' target = '_self'>
-                 Meus pedidos
-            </a>
-            <a class ='header-nav-item' href = 'carrinho.html' target = '_self'>
-                 Carrinho
-            </a>
-        </div>
+        <nav id = 'menu_hamburguer'>
+            <ul>
+                <li> <a href = 'login.html'> Minha Conta </a> </li>
+                <li> <a href = 'pedidos.html'> Meus Pedidos </a> </li>
+                <li> <a href = 'carrinho.html'> Seu Carrinho</a></li>
+                <li> <a href = 'mangas.html'> Mangás </a> </li>
+                <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
+                <li> <a href = 'livros.html'> Livros </a></li>
+                <li> <a href = 'figures.html'> Action Figures </a></li>
+            </ul>
+        </nav>
+        <nav class = 'navegacao'>
+            <div class = 'itens_nav'>
+                <a href = 'mangas.html'> Mangás </a> 
+            </div>
+            <div class = 'itens_nav'>
+                <a href = 'hqs.html'> Quadrinhos </a>
+            </div>
+            <div class = 'itens_nav'>
+                <a href = 'novels.html'> Light Novels </a> 
+            </div>
+            <div class = 'itens_nav'>
+                <a href = 'livros.html'> Livros </a>
+            </div>
+            <div class = 'itens_nav'>
+                <a href = 'figures.html'> Action Figures </a>
+            </div>
+        </nav>         
     </header>
-    <nav id = 'menu-categorias'> 
-        <!--<a href = 'categorias.html' target = '_self'> 
-            <img id = 'barrinhas' src = 'imagens/barrinhas.png' alt = 'Três barrinhas'>
-        </a>-->
-        <a class = 'categorias' href = 'mangas.html' target = '_self'> 
-            Mangás 
-        </a>
-        <a class = 'categorias' href = 'quadrinhos.html' target = '_self'> 
-            Quadrinhos
-        </a>
-        <a class = 'categorias' href = 'livros.html' target = '_self'> 
-            Livros
-        </a>
-        <a class = 'categorias' href = 'figures.html' target = '_self'> 
-            Action Figures
-        </a>
-    </nav>
     <main>
-        <p id = 'carrinho'> Seu Carrinho </p>
-        <hr>
-        <div id = 'carrinho-conteudo'>
-            <p class = 'info-carrinho'> Produtos </p>
-            <p class = 'info-carrinho'> Qtd </p>
-            <p class = 'info-carrinho'> Valor </p>
-            <p id = 'vazio'> Seu carrinho está vazio. </p>
-            <img id = 'gato' src = 'imagens/gato-triste.png' alt = 'Gatinho triste'>
+        <div class = 'container_carrinho'>
+            <div class = 'carrinho_header'>
+                <span> Produtos </span>
+                <span> Qtd </span>
+                <span> Valor </span>
+            </div>
+            <div class = 'carrinho_fundo'>
+                Seu carrinho está vazio.
+            </div>
+
+
+
         </div>
     </main>
     <footer>
-        <ul class = 'lista-rodape'>
-            <li class = 'topico'> Sobre  </li>
-            <li class = 'subtopicos'> <a href="historia.html"> A Sakura World </a></li>
-            <li class = 'subtopicos'> <a href="sobre-produtos.html"> Nossos Produtos </a> </li>
-            <li class = 'subtopicos'>  <a href="garantia.html"> Garantia </a> </li>
-        </ul>
-        <ul class = 'lista-rodape'>
-            <li class = 'topico'> Ajuda </li>
-            <li class = 'subtopicos'> <a href="perguntas.html"> Perguntas Frequentes </a> </li>
-            <li class = 'subtopicos'> <a href="formas-pagamento.html"> Formas de Pagamento </a> </li>
-            <li class = 'subtopicos'> <a href="formas-envio.html"> Formas de Envio </a> </li>
-        </ul>
-        <ul class = 'lista-rodape'> 
-            <li class = 'topico'>  Contato </li>
-            <li class = 'subtopicos'> <a href="email.html"> E-mail </a> </li>
-            <li class = 'subtopicos'> <a href="telefone.html"> Telefone </a> </li>
-            <li class = 'subtopicos'> <a href="redes.html"> Redes Sociais </a> </li>
-        <a href=""></ul></a>
+        <div class = 'info'>
+            <div class = 'div_info'>
+                <h1> Sobre </h1>
+                <a class = 'topicos' href="">A Sakura World</a>
+                <a class = 'topicos' href = ''> Nossa Política</a>
+                <a class = 'topicos' href="">Garantia</a>
+                <a class = 'topicos' href = ''>Trabalhe conosco!</a>
+            </div>
+            <div class = 'div_info'>
+                <h1> Ajuda </h1>
+                <a class = 'topicos' href="">Dúvidas Frequentes</a>
+                <a class = 'topicos' href = ''> Produtos</a>
+                <a class = 'topicos' href = ''>Pré-vendas</a>
+                <a class = 'topicos' href=""> Tipos de Envio</a>
+                <a class = 'topicos' href = ''>Trocas e Devolução</a>
+                <a class = 'topicos' href = ''>Fale Conosco</a>
+            </div>
+            <div class = 'div_info'>
+                <h1> Formas de Pagamento </h1>
+            </div>
+            <div class = 'div_info'>
+                <h1> Contato </h1>
+                <a href = ''> <img class = 'redes_sociais' src = 'imagens/instagram.png'</a>
+                <a href = ''> <img class = 'redes_sociais' src = 'imagens/twitter.png'></a>
+                <a href = ''> <img class = 'redes_sociais' src = 'imagens/facebook.png'> </a>
+            </div>
+            <div class = 'div_info'>
+                <h1> Newsletter </h1>
+                <form autocomplete="on">
+                    <input type="email" name="assinatura" id="assinatura" placeholder="SEU E-MAIL" autocomplete="email">
+                    <input type="submit" value="Assinar!" id = 'assinar'>
+                </form>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

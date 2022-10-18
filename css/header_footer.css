@@ -98,7 +98,6 @@ header{
 /* Barra de pesquisa mobile */
 
 #div_pesquisa{
-    position: absolute;
     width: 100%;
     display: none;
     background-color: var(--cor3); 
