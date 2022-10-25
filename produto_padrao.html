@@ -4,9 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' href = 'css/header_footer.css' media = 'all'>
+    <link rel = 'stylesheet' href = 'css/header_footer_query.css'>
+    <link rel = 'stylesheet' href = 'css/produto_padrao.css'>
+    <script src = 'script_header.js'></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <div class = 'menu'>
+            <a href = 'index.html'>
+                <div class = 'div_menu div_logo'>
+                    <img class = 'logo' src = 'imagens/logo3.png'>
+                    <div class = 'nome'>
+                        Sakura<span>World</span>
+                    </div>
+                </div>
+            </a>
+            <div class = 'div_pesquisa_full'>
+                <form>
+                    <input type = 'search' name = 'pesquisa' id = 'pesquisa'  placeholder = 'Busque por um título!'>
+                </form>
+            </div>
+            <div class = 'div_menu div_atalhos'>
+                <a href = 'login.html'>
+                    <img class = 'atalhos conta' src = 'imagens/novos-tamanhos/conta1.png'>
+                </a>
+                <a href = 'pedidos.html'>
+                    <img class= 'atalhos pedidos' src = 'imagens/novos-tamanhos/carrinho.png'>
+                </a>
+                <img class = 'atalhos pesquisa' onclick = 'abrirPesquisa()' src = 'imagens/a.png'>
+                <a href = 'carrinho.html'>
+                    <img class = 'atalhos carrinho' src = 'imagens/carro.png'>
+                </a>
+                <img class = 'atalhos barrinha' onmouseover = 'abrirNav()' on src = 'imagens/novos-tamanhos/barrinhas.png'>
+            </div>
+        </div>
+        <div id = 'div_pesquisa'>
+            <form>
+                <input type = 'search' name = 'pesquisa' id = 'pesquisa'  placeholder = 'Busque por um título!'>
+            </form>
+        </div>
+        <nav id = 'menu_hamburguer'>
+            <ul>
+                <li> <a href = 'login.html'> Minha Conta </a> </li>
+                <li> <a href = 'pedidos.html'> Meus Pedidos </a> </li>
+                <li> <a href = 'carrinho.html'> Seu Carrinho</a></li>
+                <li> <a href = 'mangas.html'> Mangás </a> </li>
+                <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
+                <li> <a href = 'livros.html'> Livros </a></li>
+                <li> <a href = 'figures.html'> Action Figures </a></li>
+            </ul>
+        </nav>
+        <nav class = 'navegacao'>
+            <div class = 'itens_nav'>
+                <a href = 'mangas.html'> Mangás </a> 
+            </div>
+            <div class = 'itens_nav'>
+                <a href = 'hqs.html'> Quadrinhos </a>
+            </div>
+            <div class = 'itens_nav'>
+                <a href = 'novels.html'> Light Novels </a> 
+            </div>
+            <div class = 'itens_nav'>
+                <a href = 'livros.html'> Livros </a>
+            </div>
+            <div class = 'itens_nav'>
+                <a href = 'figures.html'> Action Figures </a>
+            </div>
+        </nav>         
+    </header>
+    <main>
+        <div class = 'produto_imagem'>
+            <img id = 'imagem_do_produto' src = 'imagens/logo.png'>
+        </div>
+        <div class = 'produto_detalhes'>a</div>
+    </main>
+    <footer>
+        <div class = 'info'>
+            <div class = 'div_info'>
+                <h1> Sobre </h1>
+                <a class = 'topicos' href="">A Sakura World</a>
+                <a class = 'topicos' href = ''> Nossa Política</a>
+                <a class = 'topicos' href="">Garantia</a>
+                <a class = 'topicos' href = ''>Trabalhe conosco!</a>
+            </div>
+            <div class = 'div_info'>
+                <h1> Ajuda </h1>
+                <a class = 'topicos' href="">Dúvidas Frequentes</a>
+                <a class = 'topicos' href = ''> Produtos</a>
+                <a class = 'topicos' href = ''>Pré-vendas</a>
+                <a class = 'topicos' href=""> Tipos de Envio</a>
+                <a class = 'topicos' href = ''>Trocas e Devolução</a>
+                <a class = 'topicos' href = ''>Fale Conosco</a>
+            </div>
+            <div class = 'div_info'>
+                <h1> Formas de Pagamento </h1>
+                
+
+            </div>
+            <div class = 'div_info'>
+                <h1> Contato </h1>
+                <a href = ''> <img class = 'redes_sociais' src = 'imagens/instagram.png'</a>
+                <a href = ''> <img class = 'redes_sociais' src = 'imagens/twitter.png'></a>
+                <a href = ''> <img class = 'redes_sociais' src = 'imagens/facebook.png'> </a>
+            </div>
+            <div class = 'div_info'>
+                <h1> Newsletter </h1>
+                <form autocomplete="on">
+                    <input type="email" name="assinatura" id="assinatura" placeholder="SEU E-MAIL" autocomplete="email">
+                    <input type="submit" value="Assinar!" id = 'assinar'>
+                </form>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
