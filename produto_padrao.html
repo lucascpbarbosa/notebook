@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <link rel = 'stylesheet' href = 'css/header_footer_query.css'>
     <link rel = 'stylesheet' href = 'css/produto_padrao.css'>
     <script src = 'script_header.js'></script>
-    <title>Document</title>
+    <title class = 'nome'> </title>
 </head>
 <body>
     <header>
@@ -75,10 +75,28 @@
         </nav>         
     </header>
     <main>
-        <div class = 'produto_imagem'>
-            <img id = 'imagem_do_produto' src = 'imagens/logo.png'>
-        </div>
-        <div class = 'produto_detalhes'>a</div>
+        <section class = 'produto'>
+            <section class = 'produto_imagem'>
+                <div class = 'nome_produto'> Sakura Card Captor - Vol 11 </div>
+                <img id = 'imagem_do_produto' src = 'imagens/sakura_captor.jpg'>
+            </section>
+            <aside class = 'produto_detalhes'>
+                <div class = 'valor'> R$ 29,99 </div>
+                <div class = 'produto_quantidade'>
+                    <input class = 'mais' type="button" value="+" onclick = 'mais_um()'>
+                    <input type = 'text' name = 'quantidade' id = 'quantidade'>
+            
+                </div>
+                <div>
+                    <input class = 'adicionar_carrinho' type = 'button' value = 'Adicionar' onclick = 'adicionar_no_carrinho()'>
+                </div>
+            </aside>
+        </section>
+        <section class = 'info_produto'>
+            <h2> Sobre </h2>
+            <hr>
+            <p>Card Captor Sakura conta a história de Sakura Kinomoto, uma menina comum que cursa o quarto ano e treina para ser líder de torcida em sua escola. Um dia, ela encontra um misterioso livro no escritório de seu pai. Ao abri-lo, Sakura libera as Cartas Clow – 19 cartas criadas pelo mago Clow Lead, que atribuiu poder a elas misturando magia inglesa e chinesa. O Guardião do Lacre do Livro, Kero, também desperta e avisa à menina que as cartas deveriam ser capturadas, senão uma grande desgraça poderia acontecer. Então, Sakura se torna uma Card Captor com a difícil missão de capturar todas as cartas que escaparam!</p>
+        </section>
     </main>
     <footer>
         <div class = 'info'>
@@ -118,5 +136,7 @@
             </div>
         </div>
     </footer>
+    <script src = 'script_produto_padrao.js'></script>
+
 </body>
 </html>
