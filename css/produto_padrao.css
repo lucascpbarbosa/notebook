@@ -117,27 +117,28 @@ main{
     gap: 20px;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 0%);
-    width: 50%;
-    border: 2px solid black;
-    border-top: transparent;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.397);
     background-color: white;
-}
+    opacity: 1;
+}   
 
 .carrinho_novo > h2{
     background-color: var(--cor2);
     color: white;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .carrinho_novo > div{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 30px;
 }
 .carrinho_novo > div > img{
-    width: 50px;
+    width: 80px;
     height: 100px;
     
 }
