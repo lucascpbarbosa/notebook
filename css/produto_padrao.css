@@ -6,6 +6,7 @@ main{
     display: flex;
     justify-content: center;
     height: 300px;
+    gap: 20px;
 }
 
 .produto_imagem{
@@ -18,11 +19,19 @@ main{
     height: 300px;
 }
 
+.produto_imagem > img:hover{
+    width: 220px;
+    height: 320px;
+    transition: ease .5s;
+}
+
 .nome_produto{
+    text-align: center;
     display: block;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
     color: var(--cor4);
+    margin-bottom: 30px;
 }
 
 .produto_detalhes{
@@ -30,6 +39,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
     width: 150px;
     height: 300px;
     
@@ -54,9 +64,12 @@ main{
     border-radius: 15px;
     padding: 2px;
     background-color: transparent;
+    text-align: center;
+    font-weight: bold;
 }
 
 .mais{
+    cursor: pointer;
     text-align: center;
     border: transparent;
     background-color: transparent;
@@ -94,4 +107,37 @@ main{
 .info_produto > p{
     margin-top: 20px;
     font-size: 0.9em;
+}
+
+
+
+.carrinho_novo{
+    display: none;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 50%;
+    border: 2px solid black;
+    border-top: transparent;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.397);
+    background-color: white;
+}
+
+.carrinho_novo > h2{
+    background-color: var(--cor2);
+    color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.carrinho_novo > div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.carrinho_novo > div > img{
+    width: 50px;
+    height: 100px;
+    
 }
