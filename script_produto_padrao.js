@@ -38,7 +38,7 @@ function adicionar_no_carrinho(){
         cont++
         
          // Mostrando a div
-        carrinho.style.display = 'block'
+        carrinho.style.display = 'flex'
     }
     else{
         window.alert('Esse produto já está no carrinho!')
