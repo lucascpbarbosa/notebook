@@ -7,13 +7,16 @@ function mudou(){
     }
 }
 function abrirNav(){
-    var menu = document.getElementById('menu_hamburguer')
+    let menu = document.getElementById('menu_hamburguer')
+    let sombra_menu = document.querySelector('.sombra_menu_hamburguer')
 
-    if (menu.style.display == 'block'){
+    if (menu.style.display == 'inline-block' & sombra_menu.style.display == 'inline-block'){
         menu.style.display = 'none';
+        sombra_menu.style.display = 'none'
     }
     else {
-        menu.style.display = 'block';
+        menu.style.display = 'inline-block';
+        sombra_menu.style.display = 'inline-block'
 
     }
 }

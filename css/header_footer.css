@@ -128,13 +128,24 @@ header{
 
 #menu_hamburguer{
     position: absolute;
-    right: 0;
     display: none;
-    background-color: white;
+    right: 0;
+    background-color: var(--cor1);
     width: 150px; 
-
-
 }
+
+.sombra_menu_hamburguer{
+    display: none;
+    position: absolute;
+    right: 0;
+    height: 275px;
+    width: 152px;  
+    border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+    border-left: 1px solid rgba(0, 0, 0, 0.356);
+    filter: blur(2px);
+}
+
+
 
 #menu_hamburguer > ul{
     list-style: none;
@@ -153,7 +164,7 @@ header{
 
 #menu_hamburguer > ul > li > a{
     font-weight: bold;
-    color: var(--cor1);
+    color: var(--cor4);
 }
 
 
