@@ -72,9 +72,10 @@ header{
 }
 
 .nome > span{
+    font-weight: bold;
     margin-left: 1px;
     position: relative;
-    top: 1.5px;
+    top: 2.5px;
     color: var(--cor4);
 }
 

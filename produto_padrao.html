@@ -7,10 +7,9 @@
     <link rel = 'stylesheet' href = 'css/header_footer.css' media = 'all'>
     <link rel = 'stylesheet' href = 'css/header_footer_query.css'>
     <link rel = 'stylesheet' href = 'css/produto_padrao.css'>
-    <script src = 'script_header.js'></script>
     <title class = 'nome'> </title>
 </head>
-<body>
+<body onresize = 'mudou()'>
     <header>
         <div class = 'menu'>
             <a href = 'index.html'>
@@ -40,22 +39,6 @@
                 <img class = 'atalhos barrinha' onmouseover = 'abrirNav()' on src = 'imagens/novos-tamanhos/barrinhas.png'>
             </div>
         </div>
-        <div id = 'div_pesquisa'>
-            <form>
-                <input type = 'search' name = 'pesquisa' id = 'pesquisa'  placeholder = 'Busque por um título!'>
-            </form>
-        </div>
-        <nav id = 'menu_hamburguer'>
-            <ul>
-                <li> <a href = 'login.html'> Minha Conta </a> </li>
-                <li> <a href = 'pedidos.html'> Meus Pedidos </a> </li>
-                <li> <a href = 'carrinho.html'> Seu Carrinho</a></li>
-                <li> <a href = 'mangas.html'> Mangás </a> </li>
-                <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
-                <li> <a href = 'livros.html'> Livros </a></li>
-                <li> <a href = 'figures.html'> Action Figures </a></li>
-            </ul>
-        </nav>
         <nav class = 'navegacao'>
             <div class = 'itens_nav'>
                 <a href = 'mangas.html'> Mangás </a> 
@@ -74,6 +57,23 @@
             </div>
         </nav>         
     </header>
+    <div id = 'div_pesquisa'>
+        <form>
+            <input type = 'search' name = 'pesquisa' id = 'pesquisa'  placeholder = 'Busque por um título!'>
+        </form>
+    </div>
+    <div class = 'sombra_menu_hamburguer'></div>
+    <nav id = 'menu_hamburguer'>
+        <ul>
+            <li> <a href = 'login.html'> Minha Conta </a> </li>
+            <li> <a href = 'pedidos.html'> Meus Pedidos </a> </li>
+            <li> <a href = 'carrinho.html'> Seu Carrinho</a></li>
+            <li> <a href = 'mangas.html'> Mangás </a> </li>
+            <li> <a href = 'hqs.html'> Quadrinhos </a> </li>
+            <li> <a href = 'livros.html'> Livros </a></li>
+            <li> <a href = 'figures.html'> Action Figures </a></li>
+        </ul>
+    </nav>
     <div class = 'carrinho_novo'>
         <h2> Produto adicionado! </h2>
     </div>
@@ -141,7 +141,9 @@
             </div>
         </div>
     </footer>
+    <script src = 'script_header.js'></script>
     <script src = 'script_produto_padrao.js'></script>
+
 
 </body>
 </html>
