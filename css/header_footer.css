@@ -99,15 +99,17 @@ header{
 /* Barra de pesquisa mobile */
 
 #div_pesquisa{
+    position: relative;
     width: 100%;
     display: none;
     background-color: var(--cor3); 
     padding: 20px;
-    border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.527);
 }
 
-#pesquisa{
+#pesquisa[type=search]{
+    text-align: center;
+    font-size: 1.5em;
     display: block;
     width: 100%;
     margin: auto;
@@ -121,6 +123,7 @@ header{
 #pesquisa::placeholder{
     text-align: center;
     font-weight: bold;
+    font-size: 0.7em;
     color: var(--cor4);
 }
 
@@ -158,13 +161,13 @@ header{
 }
 
 #menu_hamburguer > ul > li:hover {
-    background-color: var(--cor4);
+    background-color: var(--cor3);
 }
 
 
 #menu_hamburguer > ul > li > a{
     font-weight: bold;
-    color: var(--cor4);
+    color: white;
 }
 
 
